@@ -1,0 +1,81 @@
+CREATE TABLE User_account(
+	user_name varchar(16) PRIMARY KEY,
+	password char(32) NOT NULL,
+	account_type varchar(12) NOT NULL,
+	last_login timestamp DEFAULT current_timestamp
+);
+
+CREATE TABLE Customer(
+	customer_id integer PRIMARY KEY,
+	last_name text NOT NULL,
+	first_name text NOT NULL,
+	street_address text NOT NULL,
+	postal_code integer NOT NULL,
+	city text NOT NULL,
+	email text NOT NULL,
+	phone_number text NOT NULL,
+	user_name varchar(16) NOT NULL,
+	FOREIGN KEY (user_name) REFERENCES User_account(user_name)
+);
+
+CREATE TABLE Shop_admin(
+	admin_id integer PRIMARY KEY,
+	name text NOT NULL,
+	user_name varchar(16),
+	FOREIGN KEY (user_name) REFERENCES User_account(user_name)
+);
+
+CREATE TABLE Product(
+	product_id integer PRIMARY KEY,
+	name text NOT NULL,
+	description text,
+	unit_price money NOT NULL,
+	visibility boolean DEFAULT TRUE
+);
+
+CREATE TABLE Product_group(
+	group_name text PRIMARY KEY,
+	group_description text
+);
+
+CREATE TABLE Product_in_group(
+	group_name text,
+	product_id integer,
+	PRIMARY KEY (group_name, product_id),
+	FOREIGN KEY (group_name) REFERENCES Product_group (group_name),
+	FOREIGN KEY (product_id) REFERENCES Product (product_id)
+);
+
+CREATE TABLE Customer_order(
+	order_id integer PRIMARY KEY,
+	customer_id integer NOT NULL,
+	order_paid boolean DEFAULT FALSE,
+	planned_fetch date,
+	planned_delivery date,
+	fetched date,
+	delivered date,
+	FOREIGN KEY (customer_id) REFERENCES Customer (client_id)
+);
+
+CREATE TABLE Product_in_order(
+	order_id integer,
+	product_id integer,
+	amount integer,
+	CONSTRAINT positive_amount CHECK (amount > 0),
+	PRIMARY KEY (order_id, product_id),
+	FOREIGN KEY (order_id) REFERENCES Customer_order (order_id),
+	FOREIGN KEY (product_id) REFERENCES Product (product_id)
+);
+
+CREATE TABLE Picture(
+	picture_id integer PRIMARY KEY,
+	address text NOT NULL
+);
+
+CREATE TABLE Product_picture(
+	product_id integer,
+	picture_id integer,
+	PRIMARY KEY (product_id, picture_id),
+	FOREIGN KEY (product_id) REFERENCES Product (product_id),
+	FOREIGN KEY (picture_id) REFERENCES Picture (picture_id)
+);
