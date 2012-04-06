@@ -1,17 +1,15 @@
 <?php
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 
 /**
- * Description of Customer_model
+ * Description of Customer
  *
  * @author markus
  */
-class Customer_model {
-
+class Customer {
     //put your code here
     private $customer_id;
     private $last_name;
@@ -22,22 +20,20 @@ class Customer_model {
     private $email;
     private $phone_number;
     private $user_name;
-    private $connection;
     
-     public function __construct($user_name) {
-        if ($user_name != -1) {
-            connectDB();
-            loadCustomer($user_name);
-        }
+    public function __construct() {
+        $this->customer_id = 0;
+    }
+
+    public function getID(){
+        return $this->customer_id;
     }
     
-    private function loadCustomer($user_name) {
-        $customerQuery = $this->connection->prepare("SELECT customer_id, last_name, first_name, 
-            street_address, postal_code, city, email, phone_number 
-            FROM Customer
-            WHERE user_name = ?");
-        $customerQuery->execute(array($user_name));
-        $customerLine = $customerQuery->fetch();
+    public function getName(){
+        return $this->first_name." ".$this->last_name;
+    }
+    
+    public function setCustomer($customerLine){
         $this->customer_id = $customerLine["customer_id"];
         $this->last_name = $customerLine["last_name"];
         $this->first_name = $customerLine["first_name"];
@@ -46,18 +42,8 @@ class Customer_model {
         $this->city = $customerLine["city"];
         $this->email = $customerLine["email"];
         $this->phone_number = $customerLine["phone_number"];
-        $this->user_name = $user_name;
+        $this->user_name = $customerLine["user_name"];
     }
-    
-    public function saveCustomer() {
-        connectDB();       
-    }
-
-
-    private function connectDB() {
-        
-    }
-
 }
 
 ?>
