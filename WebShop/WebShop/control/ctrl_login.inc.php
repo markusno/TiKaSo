@@ -24,7 +24,7 @@ class PageController {
             $customer_dao = new CustomerDAO($connection);
             $customer = $customer_dao->getCustomer($user_name);
             $_SESSION["customer"]=$customer;
-            header('Location: customer.php');
+            header('Location: welcome.php');
             exit;
         } else {
             $this->messages[] = ACCOUNT_NOT_FOUND;
@@ -45,12 +45,12 @@ class PageController {
     private function validate($user_name, $password) {
         $eval = new Evaluation();
         $valid = TRUE;
-        if (!$eval->checkLength($user_name, USERNAME_MIN_LENGTH, USERNAME_MAX_LENGTH)) {
-            $this->messages[] = INVALID_USER_NAME;
+        if (!$eval->checkUsername($user_name)) {
+            $this->messages[] = USER_NAME_INVALID;
             $valid = FALSE;
         }
-        if (!$eval->checkLength($password, PASSWORD_MIN_LENGTH, PASSWORD_MAX_LENGTH)) {
-            $this->messages[] = INVALID_PASSWORD;
+        if (!$eval->checkPassword($password)) {
+            $this->messages[] = PASSWORD_INVALID;
             $valid = FALSE;
         }
         return $valid;

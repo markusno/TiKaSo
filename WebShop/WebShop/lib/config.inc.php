@@ -13,8 +13,11 @@ define("PASSWORD_MAX_LENGTH", 16);
 define("ADMINMAIL", "markus.nousiainen@cs.helsinki.fi");
 
 //Form error messages
-define("INVALID_USER_NAME", "Virheellinen käyttäjänimi!");
-define("INVALID_PASSWORD", "Virheellinen salasana!");
-define("EMPTY_FIELDS", "Kaikki kentät pakollisia");
-define("ACCOUNT_NOT_FOUND", "Käyttäjätiliä ei löydy tarkasta käyttäjänimi ja salasana");
+define("USER_NAME_INVALID", "Virheellinen käyttäjänimi!");
+define("PASSWORD_INVALID", "Virheellinen salasana!");
+define("EMPTY_FIELDS", "Kaikki kentät pakollisia!");
+define("ACCOUNT_NOT_FOUND", "Käyttäjätiliä ei löydy! Tarkasta käyttäjänimi ja salasana!");
+define("PASSWORD_CONFIRMATION_FAIL", "Tarkista salasana!");
+define("USER_NAME_NOT_FREE", "Käyttäjänimi varattu!");
+define("ACCOUNT_CREATION_PROBLEM", "Ongelmia käyttäjätilin luonnissa!");
 ?>

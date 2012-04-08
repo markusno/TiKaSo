@@ -18,6 +18,23 @@ class User_accountDAO {
         $this->connection = &$connection;
     }
     
+    public function checkUsernameAvailability($user_name){
+        $query = $this->connection->prepare("SELECT user_name FROM user_account");
+        $query->execute();
+        while($row = $query->fetch()){
+            if ($row["user_name"] == $user_name){
+                return FALSE;
+            }
+        }
+        return TRUE;
+    }
+    
+    public function createAccount($user_name, $password, $account_type){
+        $query = $this->connection->prepare("INSERT INTO User_account (user_name,
+            password, account_type) VALUES (?, ?, ?)");
+        $query->execute(array($user_name, $password, $account_type));
+    }
+    
     public function validateCustomerAccount($user_name, $password){
         $query = $this->connection->prepare("SELECT account_type 
             FROM user_account WHERE user_name=? and password=?");
@@ -29,5 +46,4 @@ class User_accountDAO {
         return TRUE;
     }
 }
-
 ?>

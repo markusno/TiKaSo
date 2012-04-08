@@ -19,25 +19,31 @@ $controll = new PageController();
             echo $controll->getMessages();
             ?>
         </div>
-        <div id ="register">
-            <form action="<?php echo htmlspecialchars($PHP_SELF) ?>;" method="post">
-                <?php
-                echo
-                'Sukunimi: <input type="text" name="last_name" value ="' . $registerInfo["last_name"] . '"> <br>
-        Etunimi: <input type="text" name="first_name" value ="' . $registerInfo["first_name"] . '"> <br>
-        Katuosoite: <input type="text" name="street_address" value ="' . $registerInfo["street_address"] . '"> <br>
-        Postinumero: <input type="text" name="postal_code" value ="' . $registerInfo["postal_code"] . '"> <br>
-        Postitoimipaikka: <input type="text" name="city" value ="' . $registerInfo["city"] . '"> <br>
-        Sähköpostiosoite: <input type="text" name="email" value ="' . $registerInfo["email"] . '"> <br>
-        Puhelinnumero: <input type="text" name="phone_number" value ="' . $registerInfo["phone_number"] . '"> <br>
-        Käyttäjänimi: <input type="text" name="user_name" value ="' . $registerInfo["user_name"] . '"> <br>
-        Salasana: <input type="password" name="password" value ="' . $registerInfo["password"] . '"> <br>
-        <input type="submit" value="Rekisteröidy">'
-                ?>
+        <div id ="register_form">
+            <form action="<?php echo htmlspecialchars($PHP_SELF); ?>" method="post">
+                Sukunimi: <input type="text" name="last_name" value ="<?php
+                echo htmlspecialchars($form_values["last_name"]); ?>"> <br>
+                Etunimi: <input type="text" name="first_name" value ="<?php
+                echo htmlspecialchars($form_values["first_name"]); ?>"> <br>
+                Katuosoite: <input type="text" name="street_address" value ="<?php
+                echo htmlspecialchars($form_values["street_address"]); ?>"> <br>
+                Postinumero: <input type="text" name="postal_code" value ="<?php
+                echo htmlspecialchars($form_values["postal_code"]); ?>"> <br>
+                Postitoimipaikka: <input type="text" name="city" value ="<?php
+                echo htmlspecialchars($form_values["city"]); ?>"> <br>
+                Sähköpostiosoite: <input type="text" name="email" value ="<?php
+                echo htmlspecialchars($form_values["email"]); ?>"> <br>
+                Puhelinnumero: <input type="text" name="phone_number" value ="<?php
+                echo htmlspecialchars($form_values["phone_number"]); ?>"> <br>
+                Käyttäjänimi: <input type="text" name="user_name" value ="<?php
+                echo htmlspecialchars($form_values["user_name"]); ?>"> <br>
+                Salasana: <input type="password" name="password" value =""> <br>
+                Salasanan varmistus: <input type="password" name="password_confirmation" value =""> <br>
+                <input type="submit" name="register" value="Rekisteröidy">
             </form>
         </div>
-        <?php
-        include_once 'parts/footer.php';
-        ?>
+<?php
+include_once 'parts/footer.php';
+?>
     </body>
 </html>

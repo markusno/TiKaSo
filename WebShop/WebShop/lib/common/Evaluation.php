@@ -17,19 +17,24 @@ class Evaluation {
     }
 
     public function checkLength($value, $min, $max) {
-        if (is_numeric($value)) {
-            return 10^$min <= $value && $value < 10^($max+1);
-        }
         return ($min <= strlen($value) && strlen($value) <= $max);
     }
-
-    public function checkEmptyValues($array) {
+    
+    public function checkUsername($user_name){
+        return $this->checkLength($user_name, USERNAME_MIN_LENGTH, USERNAME_MAX_LENGTH);        
+    }
+    
+    public function checkPassword($password){
+        return $this->checkLength($password, PASSWORD_MIN_LENGTH, PASSWORD_MAX_LENGTH);
+    }
+    
+    public function checkNoEmptyValues(&$array) {
         foreach ($array as $value) {
             if (empty($value)) {
-                return true;
+                return FALSE;
             }
         }
-        return false;
+        return TRUE;
     }
 
     public function checkEmail($email) {
