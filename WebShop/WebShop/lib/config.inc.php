@@ -20,4 +20,8 @@ define("ACCOUNT_NOT_FOUND", "Käyttäjätiliä ei löydy! Tarkasta käyttäjäni
 define("PASSWORD_CONFIRMATION_FAIL", "Tarkista salasana!");
 define("USER_NAME_NOT_FREE", "Käyttäjänimi varattu!");
 define("ACCOUNT_CREATION_PROBLEM", "Ongelmia käyttäjätilin luonnissa!");
+define("EMAIL_INVALID", "Virheellinen sähköpostiosoite");
 ?>
+
+
+

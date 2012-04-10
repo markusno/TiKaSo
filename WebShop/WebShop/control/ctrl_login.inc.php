@@ -2,13 +2,14 @@
 
 require_once 'lib/base.inc.php';
 require_once 'control/ctrl_start_customer_session.inc.php';
+require_once 'control/ctrl_base_controller.inc.php';
 
-class PageController {
+class PageController extends BasePageController{
 
-    private $messages;
+    //private $messages;
 
     public function __construct() {
-        $this->messages = array();
+        parent::__construct();
         if (empty($_POST)) {
             return;
         }
@@ -31,16 +32,16 @@ class PageController {
         }
     }
 
-    public function getMessages() {
-        if (empty($this->messages)) {
-            return "";
-        }
-        $message = "";
-        foreach ($this->messages as $messageLine) {
-            $message = $message . $messageLine . "<br>";
-        }
-        return $message;
-    }
+//    public function getMessages() {
+//        if (empty($this->messages)) {
+//            return "";
+//        }
+//        $message = "";
+//        foreach ($this->messages as $messageLine) {
+//            $message = $message . $messageLine . "<br>";
+//        }
+//        return $message;
+//    }
 
     private function validate($user_name, $password) {
         $eval = new Evaluation();

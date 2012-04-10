@@ -18,5 +18,7 @@ require_once 'lib/dao/CustomerDAO.php';
 require_once 'lib/dao/Customer_orderDAO.php';
 require_once 'lib/dao/ProductDAO.php';
 require_once 'lib/dao/Product_groupDAO.php';
+//Logic
+require_once 'lib/logic/Email_logic.php';
 ?>
 

@@ -2,22 +2,22 @@
 
 require_once 'lib/base.inc.php';
 require_once 'control/ctrl_start_customer_session.inc.php';
+require_once 'control/ctrl_base_controller.inc.php';
 
-class PageController {
+class PageController extends BasePageController{
 
-    private $messages;
+    //private $messages;
 
     public function __construct() {
-        $this->messages = array();
+        parent::__construct();
         if (empty($_POST)) {
-            //$form_values = array();
             return;
         }
         $form_values = $_POST;
         if (!$this->validate($form_values)) {
             return;
         }
-        if ($this->registerCustomer($form_values)) {
+        if ($this->registerCustomer($form_values)) {            
             header('Location: welcome.php');
             exit;
         } else {
@@ -39,21 +39,23 @@ class PageController {
         $customer = $customer_dao->registerCustomer($form_values);
         if ($customer->getID() != 0) {
             $_SESSION["customer"] = $customer;
+            $email = new Email_logic();
+            $email->send_registeration_mail($customer);
             return TRUE;
         }
         return FALSE;
     }
 
-    public function getMessages() {
-        if (empty($this->messages)) {
-            return "";
-        }
-        $message = "";
-        foreach ($this->messages as $messageLine) {
-            $message = $message . $messageLine . "<br>";
-        }
-        return $message;
-    }
+//    public function getMessages() {
+//        if (empty($this->messages)) {
+//            return "";
+//        }
+//        $message = "";
+//        foreach ($this->messages as $messageLine) {
+//            $message = $message . $messageLine . "<br>";
+//        }
+//        return $message;
+//    }
 
     private function validate(&$form_values) {
         $eval = new Evaluation();
@@ -69,7 +71,11 @@ class PageController {
             $this->messages[] = PASSWORD_CONFIRMATION_FAIL;
             $valid = FALSE;
         }
-
+        
+        if (!$eval->checkEmail($form_values["email"])){
+            $this->messages[] = EMAIL_INVALID;
+        }
+        
         if (!$eval->checkNoEmptyValues($form_values)) {
             $this->messages[] = EMPTY_FIELDS;
             $valid = FALSE;
