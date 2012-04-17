@@ -29,5 +29,4 @@ class Product_groupDAO {
         return $product_goups;
     }
 }
-
 ?>

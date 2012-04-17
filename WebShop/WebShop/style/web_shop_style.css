@@ -1,0 +1,67 @@
+/* 
+    Document   : web_shop_style
+    Created on : Apr 10, 2012, 4:00:48 PM
+    Author     : markus
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#product_navi
+{
+    position:fixed;
+    top:200px;
+    left:30px;
+    max-width:250px;
+    min-width:150px;
+    padding:10px;
+    float:left;
+    background-color:gainsboro;
+}
+
+#site_navi
+{
+    position:fixed;
+    top:100px;
+    height:50px;
+    width:100%;
+    background-color:silver;
+}
+
+#footer
+{
+    position:fixed;
+    bottom:0px;
+    height:50px;
+    width:100%;
+    background-color:gainsboro;
+}
+
+#header
+{
+    position:fixed;
+    top:0px;
+    height:150px;
+    width:100%;
+    background-color:gainsboro;
+}
+
+div.content
+{
+    position:fixed;
+    top:250px;
+    bottom:70px;
+    left:250px;
+    right:50px;
+    max-width:60%;
+    padding:50px;
+    background-color:beige;
+}
+
+body
+{
+    background-color:antiquewhite;
+}
+
+p.error_message
+{
+    color:red;
+}

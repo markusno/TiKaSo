@@ -1,5 +1,5 @@
 <?php
-require_once 'control/ctrl_welcome.inc.php';
+require_once 'control/ctrl_product_group_page.inc.php';
 $control = new PageController();
 ?>
 <!DOCTYPE html>
@@ -12,13 +12,13 @@ $control = new PageController();
     <body>
         <?php
         include_once $header;
-        include_once 'parts/site-navi.php';
+        include_once 'parts/site_navi.php';
+        include_once 'parts/product_navi.php';
+        // put your code here
         ?>
-        Tervetuloa <br>
-        <?php
-        echo $customer_name;
-        ?>
-        
+        <div class="content">
+            
+        </div>
         <?php
         include_once 'parts/footer.php';
         ?>

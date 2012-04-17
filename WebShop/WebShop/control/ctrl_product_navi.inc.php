@@ -20,7 +20,7 @@ class ProductNaviController {
     public function getNavigation() {
         $navigation = "<ul>";
         foreach ($this->product_groups as $group){
-            $navigation = $navigation."<li> <a href = \"product_group.php?".
+            $navigation = $navigation."<li> <a href = \"product_group_page.php?id=".
                     $group->getID()."\"".">".$group->getName()."</a></li>";
         }
         $navigation = $navigation."</ul>";

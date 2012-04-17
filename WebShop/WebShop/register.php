@@ -6,6 +6,7 @@ $controll = new PageController();
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style/web_shop_style.css" />
         <title></title>
     </head>
     <body>
@@ -14,11 +15,12 @@ $controll = new PageController();
         require_once 'parts/site_navi.php';
         ;
         ?>
-        <div id="error_message">
+        <div class="content">
+        <p class="error_message">
             <?php
             echo $controll->getMessages();
             ?>
-        </div>
+        </p>
         <div id ="register_form">
             <form action="<?php echo htmlspecialchars($PHP_SELF); ?>" method="post">
                 Sukunimi: <input type="text" name="last_name" value ="<?php
@@ -41,6 +43,7 @@ $controll = new PageController();
                 Salasanan varmistus: <input type="password" name="password_confirmation" value =""> <br>
                 <input type="submit" name="register" value="Rekisteröidy">
             </form>
+        </div>
         </div>
 <?php
 include_once 'parts/footer.php';
