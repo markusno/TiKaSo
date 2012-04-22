@@ -18,16 +18,17 @@ $control = new PageController();
         ?>
         <div class="content_container">
             <div class="content">
-
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
                       method ="post">
                     <table border="1">
                         <tr>
-                            <th>Id</th><th>Nimi</th><th>Määrä</th>
-                            <th>Vähennä</th><th>Lisää</th><th>Poista</th>
+                            <th>Id</th><th>Nimi</th><th>Vähennä</th>
+                            <th>Määrä</th><th>Lisää</th><th>Poista</th><th>Hinta</th>
                         </tr>
                         <?php echo $control->getShoppingsList(); ?>
                     </table>
+                    <input type="submit" name="empty" value="Tyhjennä ostoskori"/>
+                    <input type="submit" name="checkout" value="Kassalle"/>
                 </form>
 
             </div>
