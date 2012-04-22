@@ -5,6 +5,7 @@ require_once 'lib/config.inc.php';
 //Database and evaluation
 require_once 'lib/common/DBConnection.php';
 require_once 'lib/common/Evaluation.php';
+require_once 'lib/common/Trimmer.php';
 //Models
 require_once 'lib/model/Customer.php';
 require_once 'lib/model/Customer_order.php';

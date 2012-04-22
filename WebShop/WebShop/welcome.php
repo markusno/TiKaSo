@@ -11,8 +11,8 @@ $control = new PageController();
     </head>
     <body>
         <?php
-        include_once $header;
-        include_once 'parts/site-navi.php';
+        include_once 'parts/header.php';
+        include_once 'parts/site_navi.php';
         ?>
         Tervetuloa <br>
         <?php

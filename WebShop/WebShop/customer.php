@@ -9,9 +9,12 @@ require_once 'control/ctrl_customer_info.inc.php';
     </head>
     <body>
         <?php
-        include_once $header;
+        include_once 'parts/header.php';
         include_once 'parts/site_navi.php';
         ?>
+        <div class="content_container">
+            
+        </div>
         <?php
         include_once 'parts/footer.php';
         ?>

@@ -1,5 +1,5 @@
 <?php
-require_once 'control/ctrl_product_group_page.inc.php';
+require_once 'control/ctrl_shopping_cart.inc.php';
 $control = new PageController();
 ?>
 <!DOCTYPE html>
@@ -18,15 +18,18 @@ $control = new PageController();
         ?>
         <div class="content_container">
             <div class="content">
-            <h1 class ="content_heading"id="group_heading">
-                <?php echo $control->getProductGroupTitle(); ?>
-            </h1>
-            <p class="description" id="group_description">
-                <?php echo $control->getProductGroupDescription(); ?>
-            </p>
-            <p id="product_list">
-                <?php echo $control->getProductList(); ?>
-            </p>
+
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
+                      method ="post">
+                    <table border="1">
+                        <tr>
+                            <th>Id</th><th>Nimi</th><th>Määrä</th>
+                            <th>Vähennä</th><th>Lisää</th><th>Poista</th>
+                        </tr>
+                        <?php echo $control->getShoppingsList(); ?>
+                    </table>
+                </form>
+
             </div>
         </div>
         <?php

@@ -11,23 +11,19 @@ $control = new PageController();
     </head>
     <body>
         <?php
-        include_once $header;
+        include_once 'parts/header.php';
         include_once 'parts/site_navi.php';
         ?>
+        <div class="content_container">
         <div class="content">
         <p class="error_message">
             <?php
             echo $control->getMessages();
             ?>
         </p>
-        <div id ="login">
-            <form action="<?php echo htmlspecialchars($PHP_SELF) ?>" method="post">
-                Käyttäjänimi: <input type="text" name="user_name"> <br>
-                Salasana: <input type="password" name="password"> <br>
-                <input type="submit" name="login" value="Kirjaudu">
-            </form>
+        <?php include_once 'parts/login_form.php'; ?>
         </div>
-        </div>
+        </div> 
         <?php
         include_once 'parts/footer.php';
         ?>

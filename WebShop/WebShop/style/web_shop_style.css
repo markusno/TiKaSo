@@ -43,10 +43,29 @@
     width:100%;
     background-color:gainsboro;
 }
-
-div.content
+#site_links
 {
     position:fixed;
+    left:50px;
+    padding: 10px;
+}
+#shopping_cart_block
+{
+    position:fixed;
+    right:50px;
+    padding: 10px;
+}
+
+div.login_block
+{
+    position:fixed;
+    top:20px;
+    right:50px;
+}
+
+div.content_container
+{
+    position:absolute;
     top:250px;
     bottom:70px;
     left:250px;
@@ -54,6 +73,11 @@ div.content
     max-width:60%;
     padding:50px;
     background-color:beige;
+    z-index:-1;
+}
+div.content
+{
+    position:absolute;
 }
 
 body

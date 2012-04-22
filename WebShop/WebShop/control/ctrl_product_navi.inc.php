@@ -18,12 +18,11 @@ class ProductNaviController {
     }
     
     public function getNavigation() {
-        $navigation = "<ul>";
+        $navigation = "";
         foreach ($this->product_groups as $group){
-            $navigation = $navigation."<li> <a href = \"product_group_page.php?id=".
-                    $group->getID()."\"".">".$group->getName()."</a></li>";
+            $navigation = $navigation."<a href = \"product_group_page.php?id=".
+                    $group->getID()."\"".">".$group->getName()."</a><br>";
         }
-        $navigation = $navigation."</ul>";
         return $navigation;
     }
 

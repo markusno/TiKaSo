@@ -11,10 +11,13 @@ require_once 'control/ctrl_index.inc.php';
     </head>
     <body>
         <?php
-        include_once $header;
+        include_once 'parts/header.php';
         include_once 'parts/site_navi.php';
         include_once 'parts/product_navi.php';
         ?>
+        <div class="content_container">
+            
+        </div>
         <?php
         include_once 'parts/footer.php';
         ?>

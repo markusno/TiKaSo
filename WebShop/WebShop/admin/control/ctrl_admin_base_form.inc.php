@@ -1,13 +1,24 @@
 <?php
-require_once 'lib/base.inc.php';
-require_once 'control/ctrl_start_customer_session.inc.php';
 
-class BasePageController{
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of ctrl_admin_base_form
+ *
+ * @author markus
+ */
+class AdminBaseFormController {
+    //put your code here
+    
     protected $messages;
     
     public function __construct() {
         $this->messages = array();
     }
+    
     
     public function getMessages() {
         if (empty($this->messages)) {
@@ -19,6 +30,7 @@ class BasePageController{
         }
         return $message;
     }
-    
+
 }
+
 ?>

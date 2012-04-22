@@ -16,7 +16,10 @@ class Product_group {
     private $group_name;
     private $group_description;
     
-    public function __construct() {
+    public function __construct($product_group_info) {
+        $this->product_group_id = $product_group_info["product_group_id"];
+        $this->group_name = $product_group_info["group_name"];
+        $this->group_description = $product_group_info["group_description"];
     }
     
     public function setGroup($product_group_info){
@@ -32,6 +35,10 @@ class Product_group {
     
     public function getName(){
         return $this->group_name;
+    }
+    
+    public function getDescription(){
+        return $this->group_description;
     }
 }
 

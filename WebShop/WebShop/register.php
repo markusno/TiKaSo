@@ -11,10 +11,11 @@ $controll = new PageController();
     </head>
     <body>
         <?php
-        require_once $header;
+        require_once 'parts/header.php';
         require_once 'parts/site_navi.php';
         ;
         ?>
+        <div class="content_container">
         <div class="content">
         <p class="error_message">
             <?php
@@ -43,6 +44,7 @@ $controll = new PageController();
                 Salasanan varmistus: <input type="password" name="password_confirmation" value =""> <br>
                 <input type="submit" name="register" value="Rekisteröidy">
             </form>
+        </div>
         </div>
         </div>
 <?php

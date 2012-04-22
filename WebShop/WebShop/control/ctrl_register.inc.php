@@ -1,7 +1,5 @@
 <?php
 
-require_once 'lib/base.inc.php';
-require_once 'control/ctrl_start_customer_session.inc.php';
 require_once 'control/ctrl_base_controller.inc.php';
 
 class PageController extends BasePageController{
@@ -46,16 +44,6 @@ class PageController extends BasePageController{
         return FALSE;
     }
 
-//    public function getMessages() {
-//        if (empty($this->messages)) {
-//            return "";
-//        }
-//        $message = "";
-//        foreach ($this->messages as $messageLine) {
-//            $message = $message . $messageLine . "<br>";
-//        }
-//        return $message;
-//    }
 
     private function validate(&$form_values) {
         $eval = new Evaluation();
