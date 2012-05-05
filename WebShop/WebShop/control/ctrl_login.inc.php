@@ -1,8 +1,17 @@
 <?php
+/**
+ *Page controller for customer login page. 
+ */
 require_once 'control/ctrl_base_controller.inc.php';
 
 class PageController extends BasePageController{
 
+    /**
+     * Handles information in post table from login form.
+     * If login ok saves customers info into session table and redirects to customer page.
+     * Othervise puts error message into messages table.
+     * 
+     */
     public function __construct() {
         parent::__construct();
         if (empty($_POST)) {
@@ -20,7 +29,7 @@ class PageController extends BasePageController{
             $customer_dao = new CustomerDAO($connection);
             $customer = $customer_dao->getCustomer($user_name);
             $_SESSION["customer"]=$customer;
-            header('Location: welcome.php');
+            header('Location: customer.php');
             exit;
         } else {
             $this->messages[] = ACCOUNT_NOT_FOUND;

@@ -1,0 +1,2861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a2" title="">
+  <file path="WebShop/customer.php" hash="5bc0989627d6db8e0da84ff360ad788b" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/customer.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <include line="13" type="Include Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="14" type="Include Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="23" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/parts/logout_block.php" hash="ecd6f99c1ced70babf68fbdeeb903435" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/parts/logout_block.php</error>
+    </parse_markers>
+  </file>
+  <file path="WebShop/parts/login_block.php" hash="19fec96c67482dcb85d904946230c51b" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/parts/login_block.php</error>
+    </parse_markers>
+  </file>
+  <file path="WebShop/parts/shopping_cart_block.php" hash="a65470ecefe20f9f61f416a0636844fd" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/parts/shopping_cart_block.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_shopping_cart_block.inc.php</name>
+    </include>
+  </file>
+  <file path="WebShop/parts/site_navi.php" hash="835876bca3461d40a791f8189935f5ad" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/parts/site_navi.php</error>
+    </parse_markers>
+    <include line="3" type="Include Once" package="Default">
+      <name>parts/site_links.php</name>
+    </include>
+    <include line="4" type="Include Once" package="Default">
+      <name>parts/shopping_cart_block.php</name>
+    </include>
+  </file>
+  <file path="WebShop/parts/header.php" hash="6aade71e8c7659f323750181a1e8b0b8" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/parts/header.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_header.inc.php</name>
+    </include>
+    <include line="10" type="Include Once" package="Default">
+      <name>$header_controller</name>
+    </include>
+  </file>
+  <file path="WebShop/parts/site_links.php" hash="22608c2c8bbe85c0631b76f7f336314d" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/parts/site_links.php</error>
+    </parse_markers>
+  </file>
+  <file path="WebShop/parts/product_navi.php" hash="cc63c0743564040dd688db53308a4345" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/parts/product_navi.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_product_navi.inc.php</name>
+    </include>
+  </file>
+  <file path="WebShop/parts/footer.php" hash="c8ee857a9b09b46d793b309a37036acc" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/parts/footer.php</error>
+    </parse_markers>
+  </file>
+  <file path="WebShop/parts/login_form.php" hash="c68c6892afd06d4c9dcc7bbbea5afef0" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/parts/login_form.php</error>
+    </parse_markers>
+  </file>
+  <file path="WebShop/customer_order.php" hash="bc14486bdf54db132bdadba6495b334a" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/customer_order.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_customer_order.inc.php</name>
+    </include>
+    <include line="14" type="Include Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="15" type="Include Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="16" type="Include Once" package="Default">
+      <name>parts/product_navi.php</name>
+    </include>
+    <include line="44" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/control/ctrl_header.inc.php" hash="7d6698c7aed7bd505804074a9481538f" package="Default">
+    <parse_markers>
+      <error line="8" code="50018">No DocBlock was found for property $customer</error>
+      <error line="10" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_header.inc.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="6" package="Default">
+      <name>HeaderController</name>
+      <full_name>\HeaderController</full_name>
+      <extends/>
+      <docblock line="3">
+        <description><![CDATA[Controller for customer pages header.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="8" package="Default">
+        <name>$customer</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="10" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="23" package="">
+        <name>getCustomerName</name>
+        <type>function</type>
+        <docblock line="19">
+          <description><![CDATA[Returns the name of currently logged in customer.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="19" name="return" description="as string." type="\name">
+            <type by_reference="false">\name</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="35" package="">
+        <name>getLoginBlock</name>
+        <type>function</type>
+        <docblock line="29">
+          <description><![CDATA[Getter for login / logout blocks adress.]]></description>
+          <long-description><![CDATA[<p>If customer is logged returns adress to logout block.
+Othervise returns adress to login block.</p>]]></long-description>
+          <tag line="29" name="return" description="as string" type="\adress">
+            <type by_reference="false">\adress</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_order_confirmation.inc.php" hash="2e6f19dcf54f971bf771376dd2fd300d" package="Default">
+    <parse_markers>
+      <error line="16" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_order_confirmation.inc.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends>\BasePageController</extends>
+      <docblock line="8">
+        <description><![CDATA[Description of ctrl_order_confirmation]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="16" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_index.inc.php" hash="9835db10306c7948c7340aa5f0ddeb27" package="Default">
+    <parse_markers>
+      <error line="4" code="50000">No DocBlock was found for PageController</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_index.inc.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="4" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends>\BasePageController</extends>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_customer_info.inc.php" hash="c4bed2a2875c31d24d3580329229af4c" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_customer_info.inc.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+  </file>
+  <file path="WebShop/control/ctrl_register.inc.php" hash="a41151fcc02147d7bdd655a570a57afb" package="Default">
+    <parse_markers>
+      <error line="9" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="26" code="50010">No DocBlock was found for method registerCustomer()</error>
+      <error line="48" code="50010">No DocBlock was found for method validate()</error>
+      <error line="5" code="50000">No DocBlock was found for PageController</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_register.inc.php</error>
+    </parse_markers>
+    <include line="3" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="5" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends>\BasePageController</extends>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="9" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="26" package="">
+        <name>registerCustomer</name>
+        <type>function</type>
+        <argument line="26">
+          <name>$form_values</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="48" package="">
+        <name>validate</name>
+        <type>function</type>
+        <argument line="48">
+          <name>$form_values</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_product_page.inc.php" hash="2a193763c6dadd4468c62d968a30448b" package="Default">
+    <parse_markers>
+      <error line="7" code="50018">No DocBlock was found for property $product</error>
+      <error line="9" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="28" code="50010">No DocBlock was found for method addProductToCart()</error>
+      <error line="40" code="50010">No DocBlock was found for method getProductName()</error>
+      <error line="44" code="50010">No DocBlock was found for method getProductID()</error>
+      <error line="48" code="50010">No DocBlock was found for method getProductDescription()</error>
+      <error line="52" code="50010">No DocBlock was found for method getProductPrice()</error>
+      <error line="5" code="50000">No DocBlock was found for PageController</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_product_page.inc.php</error>
+    </parse_markers>
+    <include line="3" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="5" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends>\BasePageController</extends>
+      <property final="false" static="false" visibility="private" line="7" package="Default">
+        <name>$product</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="9" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="28" package="">
+        <name>addProductToCart</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="40" package="">
+        <name>getProductName</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="44" package="">
+        <name>getProductID</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="48" package="">
+        <name>getProductDescription</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="52" package="">
+        <name>getProductPrice</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_product_navi.inc.php" hash="6826233feb4e5b2f6da49432a758fbb7" package="Default">
+    <parse_markers>
+      <error line="5" code="50018">No DocBlock was found for property $product_groups</error>
+      <error line="6" code="50018">No DocBlock was found for property $group_dao</error>
+      <error line="8" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="16" code="50010">No DocBlock was found for method getProductGroups()</error>
+      <error line="20" code="50010">No DocBlock was found for method getNavigation()</error>
+      <error line="3" code="50000">No DocBlock was found for ProductNaviController</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_product_navi.inc.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="3" package="Default">
+      <name>ProductNaviController</name>
+      <full_name>\ProductNaviController</full_name>
+      <extends/>
+      <property final="false" static="false" visibility="private" line="5" package="Default">
+        <name>$product_groups</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="6" package="Default">
+        <name>$group_dao</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="8" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="16" package="">
+        <name>getProductGroups</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="20" package="">
+        <name>getNavigation</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_login.inc.php" hash="b8151b1fa0748b8d5bfeb58f37cc25db" package="Default">
+    <parse_markers>
+      <error line="6" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="30" code="50010">No DocBlock was found for method validate()</error>
+      <error line="4" code="50000">No DocBlock was found for PageController</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_login.inc.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="4" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends>\BasePageController</extends>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="6" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="30" package="">
+        <name>validate</name>
+        <type>function</type>
+        <argument line="30">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="30">
+          <name>$password</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_shopping_cart_block.inc.php" hash="ea59d4a4b028b8baa558888fc474ef07" package="Default">
+    <parse_markers>
+      <error line="15" code="50010">No DocBlock was found for method getNumberOfProductsIncart()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_shopping_cart_block.inc.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>ShoppingCartBlockController</name>
+      <full_name>\ShoppingCartBlockController</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of ctrl_shopping_cart_block]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="15" package="">
+        <name>getNumberOfProductsIncart</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_start_customer_session.inc.php" hash="71ed77efcce727665fd5bccd5848133f" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_start_customer_session.inc.php</error>
+    </parse_markers>
+  </file>
+  <file path="WebShop/control/ctrl_checkout.inc.php" hash="9369ef60c89ce77655ba5a6f24253444" package="Default">
+    <parse_markers>
+      <error line="17" code="50018">No DocBlock was found for property $customer</error>
+      <error line="18" code="50018">No DocBlock was found for property $product_dao</error>
+      <error line="19" code="50018">No DocBlock was found for property $customer_order_dao</error>
+      <error line="20" code="50018">No DocBlock was found for property $products_in_cart</error>
+      <error line="21" code="50018">No DocBlock was found for property $shoppings</error>
+      <error line="52" code="50010">No DocBlock was found for method makeOrder()</error>
+      <error line="66" code="50010">No DocBlock was found for method emptyCart()</error>
+      <error line="70" code="50010">No DocBlock was found for method getProductsInCart()</error>
+      <error line="122" code="50010">No DocBlock was found for method getOrderInfoForMail()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_checkout.inc.php</error>
+    </parse_markers>
+    <include line="3" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="14" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends>\BasePageController</extends>
+      <docblock line="9">
+        <description><![CDATA[Page controller for checkout page.]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="9" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="17" package="Default">
+        <name>$customer</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="18" package="Default">
+        <name>$product_dao</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="19" package="Default">
+        <name>$customer_order_dao</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="20" package="Default">
+        <name>$products_in_cart</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="21" package="Default">
+        <name>$shoppings</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="27" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <docblock line="23">
+          <description><![CDATA[Handles information from check out form in post table.]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="52" package="">
+        <name>makeOrder</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="66" package="">
+        <name>emptyCart</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="70" package="">
+        <name>getProductsInCart</name>
+        <type>function</type>
+        <argument line="70">
+          <name>$shopping_cart</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="85" package="">
+        <name>getCustomerInfo</name>
+        <type>function</type>
+        <docblock line="80">
+          <description><![CDATA[Getter for information of currently logged in customer.]]></description>
+          <long-description><![CDATA[<p>If no customer is logged returns links to login and registeration pages.</p>]]></long-description>
+          <tag line="80" name="return" description="info as html string (&lt;/br&gt; used as line break)." type="\customer">
+            <type by_reference="false">\customer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="96" package="">
+        <name>getPrice</name>
+        <type>function</type>
+        <docblock line="92">
+          <description><![CDATA[Getter for price of the whole shopping cart.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="92" name="return" description="as double" type="\price">
+            <type by_reference="false">\price</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="110" package="">
+        <name>getOrderInfo</name>
+        <type>function</type>
+        <docblock line="105">
+          <description><![CDATA[Getter for information of products in shopping cart.]]></description>
+          <long-description><![CDATA[<p>If no shoppings are made returns empty string.</p>]]></long-description>
+          <tag line="105" name="return" description="info as html string (&lt;/br&gt; used as line break)." type="\order">
+            <type by_reference="false">\order</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="122" package="">
+        <name>getOrderInfoForMail</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_shopping_cart.inc.php" hash="78a366f95bf7ed7ac1294b387dd67ebc" package="Default">
+    <parse_markers>
+      <error line="17" code="50018">No DocBlock was found for property $shopping_cart</error>
+      <error line="18" code="50018">No DocBlock was found for property $product_dao</error>
+      <error line="20" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="44" code="50010">No DocBlock was found for method checkout()</error>
+      <error line="53" code="50010">No DocBlock was found for method emptyCart()</error>
+      <error line="57" code="50010">No DocBlock was found for method decreaseProductAmount()</error>
+      <error line="65" code="50010">No DocBlock was found for method increaseProductAmount()</error>
+      <error line="73" code="50010">No DocBlock was found for method removeProduct()</error>
+      <error line="81" code="50010">No DocBlock was found for method getProductsInCart()</error>
+      <error line="89" code="50010">No DocBlock was found for method getShoppingsList()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_shopping_cart.inc.php</error>
+    </parse_markers>
+    <include line="3" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="14" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends>\BasePageController</extends>
+      <docblock line="9">
+        <description><![CDATA[Description of ctrl_shopping_cart]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="9" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="17" package="Default">
+        <name>$shopping_cart</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="18" package="Default">
+        <name>$product_dao</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="20" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="44" package="">
+        <name>checkout</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="53" package="">
+        <name>emptyCart</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="57" package="">
+        <name>decreaseProductAmount</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="65" package="">
+        <name>increaseProductAmount</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="73" package="">
+        <name>removeProduct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="81" package="">
+        <name>getProductsInCart</name>
+        <type>function</type>
+        <argument line="81">
+          <name>$shoppings</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="89" package="">
+        <name>getShoppingsList</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_product_group_page.inc.php" hash="2119f3a8d27dba1e702ba905a39f0c50" package="Default">
+    <parse_markers>
+      <error line="7" code="50018">No DocBlock was found for property $product_dao</error>
+      <error line="8" code="50018">No DocBlock was found for property $product_group_dao</error>
+      <error line="9" code="50018">No DocBlock was found for property $product_group</error>
+      <error line="12" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="25" code="50010">No DocBlock was found for method getProductGroup()</error>
+      <error line="29" code="50010">No DocBlock was found for method getProductsInGroup()</error>
+      <error line="33" code="50010">No DocBlock was found for method getProductGroupTitle()</error>
+      <error line="37" code="50010">No DocBlock was found for method getProductGroupDescription()</error>
+      <error line="41" code="50010">No DocBlock was found for method getProductList()</error>
+      <error line="5" code="50000">No DocBlock was found for PageController</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_product_group_page.inc.php</error>
+    </parse_markers>
+    <include line="3" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="5" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends>\BasePageController</extends>
+      <property final="false" static="false" visibility="private" line="7" package="Default">
+        <name>$product_dao</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="8" package="Default">
+        <name>$product_group_dao</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="9" package="Default">
+        <name>$product_group</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="12" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="25" package="">
+        <name>getProductGroup</name>
+        <type>function</type>
+        <argument line="25">
+          <name>$group_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="29" package="">
+        <name>getProductsInGroup</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="33" package="">
+        <name>getProductGroupTitle</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="37" package="">
+        <name>getProductGroupDescription</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="41" package="">
+        <name>getProductList</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_customer_order.inc.php" hash="9ee6fbda25dad5f36365d279fabd02d9" package="Default">
+    <parse_markers>
+      <error line="16" code="50018">No DocBlock was found for property $customer_order_dao</error>
+      <error line="17" code="50018">No DocBlock was found for property $customer</error>
+      <error line="18" code="50018">No DocBlock was found for property $orders</error>
+      <error line="19" code="50018">No DocBlock was found for property $order_info</error>
+      <error line="21" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="37" code="50010">No DocBlock was found for method setOrderInfo()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_customer_order.inc.php</error>
+    </parse_markers>
+    <include line="3" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="14" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends>\BasePageController</extends>
+      <docblock line="9">
+        <description><![CDATA[Page controller for customer order page.]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="9" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="16" package="Default">
+        <name>$customer_order_dao</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="17" package="Default">
+        <name>$customer</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="18" package="Default">
+        <name>$orders</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="19" package="Default">
+        <name>$order_info</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="21" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="37" package="">
+        <name>setOrderInfo</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="46" package="">
+        <name>getOrdersList</name>
+        <type>function</type>
+        <docblock line="42">
+          <description><![CDATA[Builds html table rows and columns for information of customers orders.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="42" name="return" description="table rows" type="\html">
+            <type by_reference="false">\html</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="80" package="">
+        <name>getOrderID</name>
+        <type>function</type>
+        <docblock line="75">
+          <description><![CDATA[Getter for selected orders id number. If no order is selected returns
+NO_ORDER_SELECTED message defined in configuration file.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="75" name="return" description="id as string" type="\order">
+            <type by_reference="false">\order</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="91" package="">
+        <name>getOrderInfo</name>
+        <type>function</type>
+        <docblock line="87">
+          <description><![CDATA[Builds information string of customers selected order.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="87" name="return" description="string (&lt;/br&gt; as line break)." type="\html">
+            <type by_reference="false">\html</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_base_controller.inc.php" hash="4123555b6505666d86062b564f691b23" package="Default">
+    <parse_markers>
+      <error line="10" code="50018">No DocBlock was found for property $messages</error>
+      <error line="12" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="9" code="50000">No DocBlock was found for BasePageController</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_base_controller.inc.php</error>
+    </parse_markers>
+    <include line="6" type="Require Once" package="Default">
+      <name>lib/base.inc.php</name>
+      <docblock line="2">
+        <description><![CDATA[Common functions for all customer pages page controllers.]]></description>
+        <long-description><![CDATA[<p>Should be included in all page controller files and extended in page controller classes.</p>]]></long-description>
+      </docblock>
+    </include>
+    <include line="7" type="Require Once" package="Default">
+      <name>control/ctrl_start_customer_session.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="9" package="Default">
+      <name>BasePageController</name>
+      <full_name>\BasePageController</full_name>
+      <extends/>
+      <property final="false" static="false" visibility="protected" line="10" package="Default">
+        <name>$messages</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="12" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="20" package="">
+        <name>getMessages</name>
+        <type>function</type>
+        <docblock line="16">
+          <description><![CDATA[Getter for error messages.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="16" name="return" description="messages as string." type="\error">
+            <type by_reference="false">\error</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/control/ctrl_welcome.inc.php" hash="450bdbe85880e3447d6759d47b3c169c" package="Default">
+    <parse_markers>
+      <error line="8" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="6" code="50000">No DocBlock was found for PageController</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/control/ctrl_welcome.inc.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>lib/base.inc.php</name>
+    </include>
+    <include line="3" type="Require Once" package="Default">
+      <name>control/ctrl_start_customer_session.inc.php</name>
+    </include>
+    <include line="4" type="Require Once" package="Default">
+      <name>control/ctrl_base_controller.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="6" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends>\BasePageController</extends>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="8" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/admin/parts/admin_product.php" hash="77477f5fe5489618e969867047987da7" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/parts/admin_product.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_admin_product.inc.php</name>
+    </include>
+  </file>
+  <file path="WebShop/admin/parts/admin_login.php" hash="516771a29cf15fed053a4fb82882b786" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/parts/admin_login.php</error>
+    </parse_markers>
+  </file>
+  <file path="WebShop/admin/control/ctrl_start_admin_session.inc.php" hash="79ebb2e44cca03d49c418a67f6ec43c3" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/control/ctrl_start_admin_session.inc.php</error>
+    </parse_markers>
+  </file>
+  <file path="WebShop/admin/control/ctrl_admin_index_login.php" hash="64004f1588400edfb6666e8892fa9cb6" package="Default">
+    <parse_markers>
+      <error line="10" code="50018">No DocBlock was found for property $messages</error>
+      <notice line="12" code="50017">The type for the @return tag in __construct() is "type"; isn't this an IDE default?</notice>
+      <error line="45" code="50010">No DocBlock was found for method validate()</error>
+      <error line="8" code="50000">No DocBlock was found for PageController</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/control/ctrl_admin_index_login.php</error>
+    </parse_markers>
+    <include line="5" type="Require Once" package="Default">
+      <name>lib/admin_base.inc.php</name>
+      <docblock line="2">
+        <description><![CDATA[Index and login page controller for admin pages.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+    </include>
+    <include line="6" type="Require Once" package="Default">
+      <name>control/ctrl_start_admin_session.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="8" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends/>
+      <property final="false" static="false" visibility="private" line="10" package="Default">
+        <name>$messages</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="17" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <docblock line="12">
+          <description><![CDATA[If login is succesfull this constructor saves admin object in session table.]]></description>
+          <long-description><![CDATA[<p>If there's problems with login concurrent errormessage is adde to error message table.</p>]]></long-description>
+          <tag line="12" name="return" description="" type="\type">
+            <type by_reference="false">\type</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="45" package="">
+        <name>validate</name>
+        <type>function</type>
+        <argument line="45">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="45">
+          <name>$password</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="64" package="">
+        <name>getMessages</name>
+        <type>function</type>
+        <docblock line="60">
+          <description><![CDATA[Getter for error messages.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="60" name="return" description="messages as string." type="\error">
+            <type by_reference="false">\error</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/admin/control/ctrl_admin_product.inc.php" hash="a64d2f492b4de94e0e6f011a2215a93c" package="Default">
+    <parse_markers>
+      <error line="11" code="50018">No DocBlock was found for property $product_group_dao</error>
+      <error line="12" code="50018">No DocBlock was found for property $product_dao</error>
+      <error line="13" code="50018">No DocBlock was found for property $product_group</error>
+      <error line="14" code="50018">No DocBlock was found for property $product</error>
+      <error line="48" code="50010">No DocBlock was found for method buildProductInfo()</error>
+      <error line="57" code="50010">No DocBlock was found for method saveProduct()</error>
+      <error line="76" code="50010">No DocBlock was found for method createNewProduct()</error>
+      <error line="90" code="50010">No DocBlock was found for method validateForm()</error>
+      <error line="108" code="50010">No DocBlock was found for method setProduct()</error>
+      <error line="122" code="50010">No DocBlock was found for method setProductGroup()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/control/ctrl_admin_product.inc.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_admin_base_form.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="8" package="Default">
+      <name>ProductFormController</name>
+      <full_name>\ProductFormController</full_name>
+      <extends>\AdminBaseFormController</extends>
+      <docblock line="3">
+        <description><![CDATA[Page controller for product editing/creating page.]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="3" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="11" package="Default">
+        <name>$product_group_dao</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="12" package="Default">
+        <name>$product_dao</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="13" package="Default">
+        <name>$product_group</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="14" package="Default">
+        <name>$product</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="19" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <docblock line="16">
+          <description><![CDATA[Handles the information from product form given in post table.]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="48" package="">
+        <name>buildProductInfo</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="57" package="">
+        <name>saveProduct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="76" package="">
+        <name>createNewProduct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="90" package="">
+        <name>validateForm</name>
+        <type>function</type>
+        <argument line="90">
+          <name>$productInfo</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="108" package="">
+        <name>setProduct</name>
+        <type>function</type>
+        <argument line="108">
+          <name>$id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="122" package="">
+        <name>setProductGroup</name>
+        <type>function</type>
+        <argument line="122">
+          <name>$id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="133" package="">
+        <name>getProductGroupOptions</name>
+        <type>function</type>
+        <docblock line="129">
+          <description><![CDATA[Builds options for product group chooser dropdown menu in productform.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="129" name="return" description="" type="\html">
+            <type by_reference="false">\html</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="154" package="">
+        <name>getProductOptions</name>
+        <type>function</type>
+        <docblock line="150">
+          <description><![CDATA[Builds options for product chooser dropdown menu in productform.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="150" name="return" description="" type="\html">
+            <type by_reference="false">\html</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="179" package="">
+        <name>getProductID</name>
+        <type>function</type>
+        <docblock line="175">
+          <description><![CDATA[If product is chosen returns its' id number otherwise empty string.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="175" name="return" description="id as string" type="\product">
+            <type by_reference="false">\product</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="190" package="">
+        <name>getProductName</name>
+        <type>function</type>
+        <docblock line="186">
+          <description><![CDATA[If product is chosen returns its' name othervise "new product".]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="186" name="return" description="name as string" type="\product">
+            <type by_reference="false">\product</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="201" package="">
+        <name>getProductDescription</name>
+        <type>function</type>
+        <docblock line="197">
+          <description><![CDATA[If product is chosen returns its' description othervise empty string.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="197" name="return" description="description as string" type="\product">
+            <type by_reference="false">\product</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="212" package="">
+        <name>getProductPrice</name>
+        <type>function</type>
+        <docblock line="208">
+          <description><![CDATA[If product is chosen returns its' price othervise empty string.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="208" name="return" description="price as string" type="\unit">
+            <type by_reference="false">\unit</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="225" package="">
+        <name>getProductVisibleChecked</name>
+        <type>function</type>
+        <docblock line="219">
+          <description><![CDATA[If product is chosen and its' visibility value is false returns empty string.]]></description>
+          <long-description><![CDATA[<p>Othervise returns string "checked="checked""
+This getter is used for check box in html form.</p>]]></long-description>
+          <tag line="219" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="240" package="">
+        <name>getProductHiddenChecked</name>
+        <type>function</type>
+        <docblock line="234">
+          <description><![CDATA[If product is chosen and its' visibility value is false returns string "checked="checked"".]]></description>
+          <long-description><![CDATA[<p>Othervise returns empty string.
+This getter is used for check box in html form.</p>]]></long-description>
+          <tag line="234" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="254" package="">
+        <name>getProductGroupCheckBoxes</name>
+        <type>function</type>
+        <docblock line="250">
+          <description><![CDATA[Builds check boxes for html form to choose in which product groups product belongs.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="250" name="return" description="" type="\html">
+            <type by_reference="false">\html</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/admin/control/ctrl_admin_settings.inc.php" hash="850a3127cb94a80ba7e31e49b88ab4d3" package="Default">
+    <parse_markers>
+      <error line="19" code="50018">No DocBlock was found for property $admin</error>
+      <error line="20" code="50018">No DocBlock was found for property $messages</error>
+      <error line="21" code="50018">No DocBlock was found for property $content</error>
+      <error line="42" code="50010">No DocBlock was found for method setContent()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/control/ctrl_admin_settings.inc.php</error>
+    </parse_markers>
+    <include line="3" type="Require Once" package="Default">
+      <name>lib/admin_base.inc.php</name>
+    </include>
+    <include line="4" type="Require Once" package="Default">
+      <name>control/ctrl_start_admin_session.inc.php</name>
+    </include>
+    <include line="5" type="Require Once" package="Default">
+      <name>control/ctrl_admin_product.inc.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="default" line="17" package="Default">
+      <name>PageController</name>
+      <full_name>\PageController</full_name>
+      <extends/>
+      <docblock line="11">
+        <description><![CDATA[Page controller for admin settings page.]]></description>
+        <long-description><![CDATA[<p>Chooses content to be shown in settings page according to users navigation.</p>]]></long-description>
+        <tag line="11" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="19" package="Default">
+        <name>$admin</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="20" package="Default">
+        <name>$messages</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="21" package="Default">
+        <name>$content</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="27" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <docblock line="23">
+          <description><![CDATA[Checks if admin is logged in and reidrects to login page if not.]]></description>
+          <long-description><![CDATA[<p>Handles navigation information from post table.</p>]]></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="42" package="">
+        <name>setContent</name>
+        <type>function</type>
+        <argument line="42">
+          <name>$navi</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="52" package="">
+        <name>getContent</name>
+        <type>function</type>
+        <docblock line="48">
+          <description><![CDATA[Getter for contents address.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="48" name="return" description="as string." type="\address">
+            <type by_reference="false">\address</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="60" package="">
+        <name>getAdminName</name>
+        <type>function</type>
+        <docblock line="56">
+          <description><![CDATA[Getter for admins name.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="56" name="return" description="as string." type="\name">
+            <type by_reference="false">\name</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="68" package="">
+        <name>getAdminLastLogin</name>
+        <type>function</type>
+        <docblock line="64">
+          <description><![CDATA[Getter for admins last login time.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="64" name="return" description="date and time as string." type="\login">
+            <type by_reference="false">\login</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/admin/control/ctrl_admin_base_form.inc.php" hash="5383934183390a115ffdfebaf6e4cb25" package="Default">
+    <parse_markers>
+      <error line="16" code="50018">No DocBlock was found for property $messages</error>
+      <error line="18" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/control/ctrl_admin_base_form.inc.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>AdminBaseFormController</name>
+      <full_name>\AdminBaseFormController</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Common operations for all forms in admin pages.]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="16" package="Default">
+        <name>$messages</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="18" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="26" package="">
+        <name>getMessages</name>
+        <type>function</type>
+        <docblock line="22">
+          <description><![CDATA[Getter for error messages.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="22" name="return" description="messages as string." type="\error">
+            <type by_reference="false">\error</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/admin/settings.php" hash="65bd43a1021e57883d77a861f1233ad7" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/settings.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_admin_settings.inc.php</name>
+    </include>
+    <include line="33" type="Include Once" package="Default">
+      <name>$control</name>
+    </include>
+  </file>
+  <file path="WebShop/admin/index.php" hash="f21a886a3164b207ad1664164a655a68" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/index.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_admin_index_login.php</name>
+    </include>
+    <include line="16" type="Include Once" package="Default">
+      <name>parts/admin_login.php</name>
+    </include>
+  </file>
+  <file path="WebShop/admin/lib/admin_config.inc.php" hash="d35141c0713f21565cf49c7a7ac2e4ff" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/lib/admin_config.inc.php</error>
+    </parse_markers>
+    <constant namespace="default" line="7" package="Default">
+      <name>DATABASE</name>
+      <value><![CDATA["pgsql:host=localhost;dbname=markusno"]]></value>
+      <docblock line="2">
+        <description><![CDATA[Configuration file for admin pages settings.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+    </constant>
+    <constant namespace="default" line="8" package="Default">
+      <name>DBUSER</name>
+      <value><![CDATA["markusno"]]></value>
+    </constant>
+    <constant namespace="default" line="9" package="Default">
+      <name>DBPASS</name>
+      <value><![CDATA["bb6a769a27189f9b"]]></value>
+    </constant>
+    <constant namespace="default" line="11" package="Default">
+      <name>USERNAME_MIN_LENGTH</name>
+      <value><![CDATA[4]]></value>
+    </constant>
+    <constant namespace="default" line="12" package="Default">
+      <name>USERNAME_MAX_LENGTH</name>
+      <value><![CDATA[16]]></value>
+    </constant>
+    <constant namespace="default" line="13" package="Default">
+      <name>PASSWORD_MIN_LENGTH</name>
+      <value><![CDATA[6]]></value>
+    </constant>
+    <constant namespace="default" line="14" package="Default">
+      <name>PASSWORD_MAX_LENGTH</name>
+      <value><![CDATA[16]]></value>
+    </constant>
+    <constant namespace="default" line="17" package="Default">
+      <name>ADMINMAIL</name>
+      <value><![CDATA["markus.nousiainen@cs.helsinki.fi"]]></value>
+    </constant>
+    <constant namespace="default" line="20" package="Default">
+      <name>USER_NAME_INVALID</name>
+      <value><![CDATA["Invalid username!"]]></value>
+    </constant>
+    <constant namespace="default" line="21" package="Default">
+      <name>PASSWORD_INVALID</name>
+      <value><![CDATA["Invalid password!"]]></value>
+    </constant>
+    <constant namespace="default" line="22" package="Default">
+      <name>EMPTY_FIELDS</name>
+      <value><![CDATA["All fields required!"]]></value>
+    </constant>
+    <constant namespace="default" line="23" package="Default">
+      <name>NAME_EMPTY</name>
+      <value><![CDATA["Name required!"]]></value>
+    </constant>
+    <constant namespace="default" line="24" package="Default">
+      <name>ACCOUNT_NOT_FOUND</name>
+      <value><![CDATA["Can't find user account!"]]></value>
+    </constant>
+    <constant namespace="default" line="25" package="Default">
+      <name>PASSWORD_CONFIRMATION_FAIL</name>
+      <value><![CDATA["Check password!"]]></value>
+    </constant>
+    <constant namespace="default" line="26" package="Default">
+      <name>USER_NAME_NOT_FREE</name>
+      <value><![CDATA["Username already taken!"]]></value>
+    </constant>
+    <constant namespace="default" line="27" package="Default">
+      <name>ACCOUNT_CREATION_PROBLEM</name>
+      <value><![CDATA["Problems creating account!"]]></value>
+    </constant>
+    <constant namespace="default" line="28" package="Default">
+      <name>EMAIL_INVALID</name>
+      <value><![CDATA["Invalid email!"]]></value>
+    </constant>
+    <constant namespace="default" line="29" package="Default">
+      <name>PRICE_NOT_NUMERIC</name>
+      <value><![CDATA["Only numbers for price with comma as decimal separator!"]]></value>
+    </constant>
+    <constant namespace="default" line="30" package="Default">
+      <name>PRICE_NEGATIVE</name>
+      <value><![CDATA["Price can't be negative!"]]></value>
+    </constant>
+    <constant namespace="default" line="31" package="Default">
+      <name>PRODUCT_SAVED_SUCCESFULLY</name>
+      <value><![CDATA["Product saved succesfully!"]]></value>
+    </constant>
+    <constant namespace="default" line="32" package="Default">
+      <name>PRODUCT_CREATED_SUCCESFULLY</name>
+      <value><![CDATA["New product created succesfully!"]]></value>
+    </constant>
+    <constant namespace="default" line="33" package="Default">
+      <name>PRODUCT_NOT_SELECTED</name>
+      <value><![CDATA["You need to select existing product in order to save changes!"]]></value>
+    </constant>
+  </file>
+  <file path="WebShop/admin/lib/admin_base.inc.php" hash="4457e01e7a603a6f64065612b9834b38" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/admin/lib/admin_base.inc.php</error>
+    </parse_markers>
+    <include line="5" type="Require Once" package="Default">
+      <name>lib/admin_config.inc.php</name>
+      <docblock line="2">
+        <description><![CDATA[File in wich all commonly used files are required.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+    </include>
+    <include line="8" type="Require Once" package="Default">
+      <name>../lib/common/DBConnection.php</name>
+    </include>
+    <include line="9" type="Require Once" package="Default">
+      <name>../lib/common/Evaluation.php</name>
+    </include>
+    <include line="10" type="Require Once" package="Default">
+      <name>../lib/common/Trimmer.php</name>
+    </include>
+    <include line="12" type="Require Once" package="Default">
+      <name>../lib/model/Shop_admin.php</name>
+    </include>
+    <include line="13" type="Require Once" package="Default">
+      <name>../lib/model/Customer.php</name>
+    </include>
+    <include line="14" type="Require Once" package="Default">
+      <name>../lib/model/Customer_order.php</name>
+    </include>
+    <include line="15" type="Require Once" package="Default">
+      <name>../lib/model/Product.php</name>
+    </include>
+    <include line="16" type="Require Once" package="Default">
+      <name>../lib/model/Product_group.php</name>
+    </include>
+    <include line="17" type="Require Once" package="Default">
+      <name>../lib/model/Shopping_cart.php</name>
+    </include>
+    <include line="19" type="Require Once" package="Default">
+      <name>../lib/dao/Shop_adminDAO.php</name>
+    </include>
+    <include line="20" type="Require Once" package="Default">
+      <name>../lib/dao/User_accountDAO.php</name>
+    </include>
+    <include line="21" type="Require Once" package="Default">
+      <name>../lib/dao/CustomerDAO.php</name>
+    </include>
+    <include line="22" type="Require Once" package="Default">
+      <name>../lib/dao/Customer_orderDAO.php</name>
+    </include>
+    <include line="23" type="Require Once" package="Default">
+      <name>../lib/dao/ProductDAO.php</name>
+    </include>
+    <include line="24" type="Require Once" package="Default">
+      <name>../lib/dao/Product_groupDAO.php</name>
+    </include>
+    <include line="26" type="Require Once" package="Default">
+      <name>../lib/logic/Email_logic.php</name>
+    </include>
+  </file>
+  <file path="WebShop/register.php" hash="0f448b99c0fed7e602748e4c63672a1d" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/register.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_register.inc.php</name>
+    </include>
+    <include line="14" type="Require Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="15" type="Require Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="51" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/order_confirmation.php" hash="73613e18a59c7dc2e690277bc0e85962" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/order_confirmation.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_order_confirmation.inc.php</name>
+    </include>
+    <include line="14" type="Include Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="15" type="Include Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="16" type="Include Once" package="Default">
+      <name>parts/product_navi.php</name>
+    </include>
+    <include line="34" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/login.php" hash="9b89141ab673f37127e7c9a31300aea6" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/login.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_login.inc.php</name>
+    </include>
+    <include line="14" type="Include Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="15" type="Include Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="24" type="Include Once" package="Default">
+      <name>parts/login_form.php</name>
+    </include>
+    <include line="28" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/product_group_page.php" hash="d7d86f03cf0ece8489dfd9796e9596a6" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/product_group_page.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_product_group_page.inc.php</name>
+    </include>
+    <include line="14" type="Include Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="15" type="Include Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="16" type="Include Once" package="Default">
+      <name>parts/product_navi.php</name>
+    </include>
+    <include line="33" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/checkout.php" hash="803c0c45a40e048a7918b5ffb7fd61b2" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/checkout.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_checkout.inc.php</name>
+    </include>
+    <include line="18" type="Include Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="19" type="Include Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="20" type="Include Once" package="Default">
+      <name>parts/product_navi.php</name>
+    </include>
+    <include line="56" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/shopping_cart.php" hash="9f3c9d13ba01c19831efe06702d7bf68" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/shopping_cart.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_shopping_cart.inc.php</name>
+    </include>
+    <include line="14" type="Include Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="15" type="Include Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="16" type="Include Once" package="Default">
+      <name>parts/product_navi.php</name>
+    </include>
+    <include line="40" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/welcome.php" hash="f5cfdbcb01899d1bbf1e1108606dc737" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/welcome.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_welcome.inc.php</name>
+    </include>
+    <include line="14" type="Include Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="15" type="Include Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="23" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/product_page.php" hash="cf629ab7ac6ca0b8edaf6830550307cd" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/product_page.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_product_page.inc.php</name>
+    </include>
+    <include line="14" type="Include Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="15" type="Include Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="16" type="Include Once" package="Default">
+      <name>parts/product_navi.php</name>
+    </include>
+    <include line="41" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/testi.php" hash="b48c20b329f686f39b98d37974fcd348" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/testi.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>lib/base.inc.php</name>
+    </include>
+  </file>
+  <file path="WebShop/index.php" hash="e91ad13172520210575fd60b1973a149" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/index.php</error>
+    </parse_markers>
+    <include line="2" type="Require Once" package="Default">
+      <name>control/ctrl_index.inc.php</name>
+    </include>
+    <include line="14" type="Include Once" package="Default">
+      <name>parts/header.php</name>
+    </include>
+    <include line="15" type="Include Once" package="Default">
+      <name>parts/site_navi.php</name>
+    </include>
+    <include line="16" type="Include Once" package="Default">
+      <name>parts/product_navi.php</name>
+    </include>
+    <include line="22" type="Include Once" package="Default">
+      <name>parts/footer.php</name>
+    </include>
+  </file>
+  <file path="WebShop/lib/common/Trimmer.php" hash="ff9aa701f81bda19fe8923a03725fc57" package="Default">
+    <parse_markers>
+      <error line="16" code="50010">No DocBlock was found for method moneyToDecimal()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/common/Trimmer.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>Trimmer</name>
+      <full_name>\Trimmer</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of Trimmer]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="16" package="">
+        <name>moneyToDecimal</name>
+        <type>function</type>
+        <argument line="16">
+          <name>$value</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/common/DBConnection.php" hash="9a468cf755b70e06913dce5e41e7a09f" package="Default">
+    <parse_markers>
+      <error line="15" code="50010">No DocBlock was found for method getConnetion()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/common/DBConnection.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>DBConnection</name>
+      <full_name>\DBConnection</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of DBConnection]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="15" package="">
+        <name>getConnetion</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/common/Evaluation.php" hash="dcfb9a5f50c5ef54d2c3d8fd51b5518a" package="Default">
+    <parse_markers>
+      <error line="15" code="50010">No DocBlock was found for method checkMonetaryValue()</error>
+      <error line="21" code="50010">No DocBlock was found for method checkEmptyValue()</error>
+      <error line="25" code="50010">No DocBlock was found for method checkNumericValueNotNegative()</error>
+      <error line="29" code="50010">No DocBlock was found for method checkNumericValue()</error>
+      <error line="33" code="50010">No DocBlock was found for method checkLength()</error>
+      <error line="37" code="50010">No DocBlock was found for method checkUsername()</error>
+      <error line="41" code="50010">No DocBlock was found for method checkPassword()</error>
+      <error line="45" code="50010">No DocBlock was found for method checkNoEmptyValues()</error>
+      <error line="54" code="50010">No DocBlock was found for method checkEmail()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/common/Evaluation.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>Evaluation</name>
+      <full_name>\Evaluation</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of Evaluation]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="15" package="">
+        <name>checkMonetaryValue</name>
+        <type>function</type>
+        <argument line="15">
+          <name>$value</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="21" package="">
+        <name>checkEmptyValue</name>
+        <type>function</type>
+        <argument line="21">
+          <name>$value</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="25" package="">
+        <name>checkNumericValueNotNegative</name>
+        <type>function</type>
+        <argument line="25">
+          <name>$value</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="29" package="">
+        <name>checkNumericValue</name>
+        <type>function</type>
+        <argument line="29">
+          <name>$value</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="33" package="">
+        <name>checkLength</name>
+        <type>function</type>
+        <argument line="33">
+          <name>$value</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="33">
+          <name>$min</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="33">
+          <name>$max</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="37" package="">
+        <name>checkUsername</name>
+        <type>function</type>
+        <argument line="37">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="41" package="">
+        <name>checkPassword</name>
+        <type>function</type>
+        <argument line="41">
+          <name>$password</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="45" package="">
+        <name>checkNoEmptyValues</name>
+        <type>function</type>
+        <argument line="45">
+          <name>$array</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="54" package="">
+        <name>checkEmail</name>
+        <type>function</type>
+        <argument line="54">
+          <name>$email</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/model/Product.php" hash="746e8df0692a3aec3946a874c5fe817a" package="Default">
+    <parse_markers>
+      <error line="16" code="50018">No DocBlock was found for property $product_id</error>
+      <error line="17" code="50018">No DocBlock was found for property $name</error>
+      <error line="18" code="50018">No DocBlock was found for property $description</error>
+      <error line="19" code="50018">No DocBlock was found for property $unit_price</error>
+      <error line="20" code="50018">No DocBlock was found for property $visibility</error>
+      <error line="22" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="31" code="50010">No DocBlock was found for method getID()</error>
+      <error line="35" code="50010">No DocBlock was found for method getName()</error>
+      <error line="39" code="50010">No DocBlock was found for method getDescription()</error>
+      <error line="43" code="50010">No DocBlock was found for method getPrice()</error>
+      <error line="47" code="50010">No DocBlock was found for method getVisibility()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/model/Product.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>Product</name>
+      <full_name>\Product</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of Product]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="16" package="Default">
+        <name>$product_id</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="17" package="Default">
+        <name>$name</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="18" package="Default">
+        <name>$description</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="19" package="Default">
+        <name>$unit_price</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="20" package="Default">
+        <name>$visibility</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="22" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <argument line="22">
+          <name>$product_info</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="31" package="">
+        <name>getID</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="35" package="">
+        <name>getName</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="39" package="">
+        <name>getDescription</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="43" package="">
+        <name>getPrice</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="47" package="">
+        <name>getVisibility</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/model/Shopping_cart.php" hash="d7eb136602d20506f6cb5cfcc1f96993" package="Default">
+    <parse_markers>
+      <error line="16" code="50018">No DocBlock was found for property $shoppings</error>
+      <error line="18" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="22" code="50010">No DocBlock was found for method addToCart()</error>
+      <error line="31" code="50010">No DocBlock was found for method increaseAmount()</error>
+      <error line="35" code="50010">No DocBlock was found for method decreaseAmount()</error>
+      <error line="42" code="50010">No DocBlock was found for method removeProduct()</error>
+      <error line="46" code="50010">No DocBlock was found for method setAmount()</error>
+      <error line="50" code="50010">No DocBlock was found for method getShoppings()</error>
+      <error line="54" code="50010">No DocBlock was found for method getNumberOfProducts()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/model/Shopping_cart.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>Shopping_cart</name>
+      <full_name>\Shopping_cart</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of Shopping_cart]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="16" package="Default">
+        <name>$shoppings</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="18" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="22" package="">
+        <name>addToCart</name>
+        <type>function</type>
+        <argument line="22">
+          <name>$product_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="22">
+          <name>$amount</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="31" package="">
+        <name>increaseAmount</name>
+        <type>function</type>
+        <argument line="31">
+          <name>$product_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="35" package="">
+        <name>decreaseAmount</name>
+        <type>function</type>
+        <argument line="35">
+          <name>$product_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="42" package="">
+        <name>removeProduct</name>
+        <type>function</type>
+        <argument line="42">
+          <name>$product_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="46" package="">
+        <name>setAmount</name>
+        <type>function</type>
+        <argument line="46">
+          <name>$product_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="46">
+          <name>$amount</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="50" package="">
+        <name>getShoppings</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="54" package="">
+        <name>getNumberOfProducts</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/model/Customer_order.php" hash="aca8cd38edd62968157c19535629f61d" package="Default">
+    <parse_markers>
+      <error line="15" code="50018">No DocBlock was found for property $order_id</error>
+      <error line="16" code="50018">No DocBlock was found for property $customer_id</error>
+      <error line="17" code="50018">No DocBlock was found for property $order_paid</error>
+      <error line="18" code="50018">No DocBlock was found for property $planned_fetch</error>
+      <error line="19" code="50018">No DocBlock was found for property $planned_delivery</error>
+      <error line="20" code="50018">No DocBlock was found for property $fetched</error>
+      <error line="21" code="50018">No DocBlock was found for property $delivered</error>
+      <error line="23" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="33" code="50010">No DocBlock was found for method getOrderID()</error>
+      <error line="37" code="50010">No DocBlock was found for method getCustomerID()</error>
+      <error line="41" code="50010">No DocBlock was found for method getOrderPaid()</error>
+      <error line="45" code="50010">No DocBlock was found for method getPlannedFetch()</error>
+      <error line="49" code="50010">No DocBlock was found for method getPlannedDelivery()</error>
+      <error line="53" code="50010">No DocBlock was found for method getFetched()</error>
+      <error line="57" code="50010">No DocBlock was found for method getDelivered()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/model/Customer_order.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>Customer_order</name>
+      <full_name>\Customer_order</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of Customer_order]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="15" package="Default">
+        <name>$order_id</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="16" package="Default">
+        <name>$customer_id</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="17" package="Default">
+        <name>$order_paid</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="18" package="Default">
+        <name>$planned_fetch</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="19" package="Default">
+        <name>$planned_delivery</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="20" package="Default">
+        <name>$fetched</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="21" package="Default">
+        <name>$delivered</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="23" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <argument line="23">
+          <name>$order_info</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="33" package="">
+        <name>getOrderID</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="37" package="">
+        <name>getCustomerID</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="41" package="">
+        <name>getOrderPaid</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="45" package="">
+        <name>getPlannedFetch</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="49" package="">
+        <name>getPlannedDelivery</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="53" package="">
+        <name>getFetched</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="57" package="">
+        <name>getDelivered</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/model/Product_group.php" hash="d74b76d34a780f56a84f82d32d42d86e" package="Default">
+    <parse_markers>
+      <error line="15" code="50018">No DocBlock was found for property $product_group_id</error>
+      <error line="16" code="50018">No DocBlock was found for property $group_name</error>
+      <error line="17" code="50018">No DocBlock was found for property $group_description</error>
+      <error line="19" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="25" code="50010">No DocBlock was found for method setGroup()</error>
+      <error line="32" code="50010">No DocBlock was found for method getID()</error>
+      <error line="36" code="50010">No DocBlock was found for method getName()</error>
+      <error line="40" code="50010">No DocBlock was found for method getDescription()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/model/Product_group.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>Product_group</name>
+      <full_name>\Product_group</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of Product_group]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="15" package="Default">
+        <name>$product_group_id</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="16" package="Default">
+        <name>$group_name</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="17" package="Default">
+        <name>$group_description</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="19" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <argument line="19">
+          <name>$product_group_info</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="25" package="">
+        <name>setGroup</name>
+        <type>function</type>
+        <argument line="25">
+          <name>$product_group_info</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="32" package="">
+        <name>getID</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="36" package="">
+        <name>getName</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="40" package="">
+        <name>getDescription</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/model/Shop_admin.php" hash="1685d75d988c3495687e716f00360913" package="Default">
+    <parse_markers>
+      <error line="15" code="50018">No DocBlock was found for property $name</error>
+      <error line="16" code="50018">No DocBlock was found for property $user_name</error>
+      <error line="17" code="50018">No DocBlock was found for property $last_login</error>
+      <error line="19" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="25" code="50010">No DocBlock was found for method getName()</error>
+      <error line="29" code="50010">No DocBlock was found for method getUserName()</error>
+      <error line="33" code="50010">No DocBlock was found for method getLastLogin()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/model/Shop_admin.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>Admin</name>
+      <full_name>\Admin</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of Admin]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="15" package="Default">
+        <name>$name</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="16" package="Default">
+        <name>$user_name</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="17" package="Default">
+        <name>$last_login</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="19" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <argument line="19">
+          <name>$admin_info</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="19">
+          <name>$last_login</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="25" package="">
+        <name>getName</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="29" package="">
+        <name>getUserName</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="33" package="">
+        <name>getLastLogin</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/model/Customer.php" hash="c8e5e0622e913d4e82251683aab3c401" package="Default">
+    <parse_markers>
+      <error line="14" code="50018">No DocBlock was found for property $customer_id</error>
+      <error line="15" code="50018">No DocBlock was found for property $last_name</error>
+      <error line="16" code="50018">No DocBlock was found for property $first_name</error>
+      <error line="17" code="50018">No DocBlock was found for property $street_address</error>
+      <error line="18" code="50018">No DocBlock was found for property $postal_code</error>
+      <error line="19" code="50018">No DocBlock was found for property $city</error>
+      <error line="20" code="50018">No DocBlock was found for property $email</error>
+      <error line="21" code="50018">No DocBlock was found for property $phone_number</error>
+      <error line="22" code="50018">No DocBlock was found for property $user_name</error>
+      <error line="24" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="28" code="50010">No DocBlock was found for method getID()</error>
+      <error line="32" code="50010">No DocBlock was found for method getUsername()</error>
+      <error line="36" code="50010">No DocBlock was found for method getName()</error>
+      <error line="40" code="50010">No DocBlock was found for method getEmail()</error>
+      <error line="44" code="50010">No DocBlock was found for method getStreetaddress()</error>
+      <error line="48" code="50010">No DocBlock was found for method getPostalcode()</error>
+      <error line="52" code="50010">No DocBlock was found for method getCity()</error>
+      <error line="56" code="50010">No DocBlock was found for method getPhonenumber()</error>
+      <error line="60" code="50010">No DocBlock was found for method setCustomer()</error>
+      <error line="72" code="50010">No DocBlock was found for method toHTMLString()</error>
+      <error line="82" code="50010">No DocBlock was found for method toString()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/model/Customer.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="12" package="Default">
+      <name>Customer</name>
+      <full_name>\Customer</full_name>
+      <extends/>
+      <docblock line="7">
+        <description><![CDATA[Description of Customer]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="7" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="14" package="Default">
+        <name>$customer_id</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="15" package="Default">
+        <name>$last_name</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="16" package="Default">
+        <name>$first_name</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="17" package="Default">
+        <name>$street_address</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="18" package="Default">
+        <name>$postal_code</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="19" package="Default">
+        <name>$city</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="20" package="Default">
+        <name>$email</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="21" package="Default">
+        <name>$phone_number</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="22" package="Default">
+        <name>$user_name</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="24" package="">
+        <name>__construct</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="28" package="">
+        <name>getID</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="32" package="">
+        <name>getUsername</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="36" package="">
+        <name>getName</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="40" package="">
+        <name>getEmail</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="44" package="">
+        <name>getStreetaddress</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="48" package="">
+        <name>getPostalcode</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="52" package="">
+        <name>getCity</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="56" package="">
+        <name>getPhonenumber</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="60" package="">
+        <name>setCustomer</name>
+        <type>function</type>
+        <argument line="60">
+          <name>$customer_info</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="72" package="">
+        <name>toHTMLString</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="82" package="">
+        <name>toString</name>
+        <type>function</type>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/dao/ProductDAO.php" hash="7e1ff7af4bbd73dff17ce1cfe534dbfc" package="Default">
+    <parse_markers>
+      <error line="17" code="50018">No DocBlock was found for property $connection</error>
+      <error line="19" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="23" code="50010">No DocBlock was found for method getProduct()</error>
+      <error line="33" code="50010">No DocBlock was found for method getAllProducts()</error>
+      <error line="43" code="50010">No DocBlock was found for method getProductsInGroup()</error>
+      <error line="55" code="50010">No DocBlock was found for method removeProductFromAllGroups()</error>
+      <error line="61" code="50010">No DocBlock was found for method saveExistingProduct()</error>
+      <error line="72" code="50010">No DocBlock was found for method saveNewProduct()</error>
+      <error line="85" code="50010">No DocBlock was found for method addProductInGroup()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/dao/ProductDAO.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>ProductDAO</name>
+      <full_name>\ProductDAO</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of ProductDAO]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="17" package="Default">
+        <name>$connection</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="19" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <argument line="19">
+          <name>$connection</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="23" package="">
+        <name>getProduct</name>
+        <type>function</type>
+        <argument line="23">
+          <name>$product_ID</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="33" package="">
+        <name>getAllProducts</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="43" package="">
+        <name>getProductsInGroup</name>
+        <type>function</type>
+        <argument line="43">
+          <name>$product_group_ID</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="55" package="">
+        <name>removeProductFromAllGroups</name>
+        <type>function</type>
+        <argument line="55">
+          <name>$product_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="61" package="">
+        <name>saveExistingProduct</name>
+        <type>function</type>
+        <argument line="61">
+          <name>$product_info</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="61">
+          <name>$product_group_ids</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="72" package="">
+        <name>saveNewProduct</name>
+        <type>function</type>
+        <argument line="72">
+          <name>$product_info</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="72">
+          <name>$product_group_ids</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="85" package="">
+        <name>addProductInGroup</name>
+        <type>function</type>
+        <argument line="85">
+          <name>$product_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="85">
+          <name>$product_group_ids</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/dao/Shop_adminDAO.php" hash="3c042bf7d93278b69e0fc03f0909852a" package="Default">
+    <parse_markers>
+      <error line="15" code="50018">No DocBlock was found for property $connection</error>
+      <error line="17" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="21" code="50010">No DocBlock was found for method getAdmin()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/dao/Shop_adminDAO.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>Shop_adminDAO</name>
+      <full_name>\Shop_adminDAO</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of Shop_adminDAO]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="15" package="Default">
+        <name>$connection</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="17" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <argument line="17">
+          <name>$connection</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="21" package="">
+        <name>getAdmin</name>
+        <type>function</type>
+        <argument line="21">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="21">
+          <name>$last_login</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/dao/User_accountDAO.php" hash="6e3102c577d9fd45c4ef62e564a11623" package="Default">
+    <parse_markers>
+      <error line="15" code="50018">No DocBlock was found for property $connection</error>
+      <error line="17" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="21" code="50010">No DocBlock was found for method checkUsernameAvailability()</error>
+      <error line="32" code="50010">No DocBlock was found for method createAccount()</error>
+      <error line="38" code="50010">No DocBlock was found for method validateCustomerAccount()</error>
+      <error line="49" code="50010">No DocBlock was found for method getLastLogin()</error>
+      <error line="57" code="50010">No DocBlock was found for method setLastLogin()</error>
+      <error line="64" code="50010">No DocBlock was found for method validateAdminAccount()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/dao/User_accountDAO.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>User_accountDAO</name>
+      <full_name>\User_accountDAO</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of User_accountDAO]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="15" package="Default">
+        <name>$connection</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="17" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <argument line="17">
+          <name>$connection</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="21" package="">
+        <name>checkUsernameAvailability</name>
+        <type>function</type>
+        <argument line="21">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="32" package="">
+        <name>createAccount</name>
+        <type>function</type>
+        <argument line="32">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="32">
+          <name>$password</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="32">
+          <name>$account_type</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="38" package="">
+        <name>validateCustomerAccount</name>
+        <type>function</type>
+        <argument line="38">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="38">
+          <name>$password</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="49" package="">
+        <name>getLastLogin</name>
+        <type>function</type>
+        <argument line="49">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="57" package="">
+        <name>setLastLogin</name>
+        <type>function</type>
+        <argument line="57">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="64" package="">
+        <name>validateAdminAccount</name>
+        <type>function</type>
+        <argument line="64">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="64">
+          <name>$password</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/dao/Product_groupDAO.php" hash="94622e76bf4f88ca6776c4c748476b7a" package="Default">
+    <parse_markers>
+      <error line="16" code="50018">No DocBlock was found for property $connection</error>
+      <error line="18" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="22" code="50010">No DocBlock was found for method getProductGroupList()</error>
+      <error line="32" code="50010">No DocBlock was found for method getProductGroupIdListForProduct()</error>
+      <error line="44" code="50010">No DocBlock was found for method getProductGroup()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/dao/Product_groupDAO.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>Product_groupDAO</name>
+      <full_name>\Product_groupDAO</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of Product_groupDAO]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="16" package="Default">
+        <name>$connection</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="18" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <argument line="18">
+          <name>$connection</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="22" package="">
+        <name>getProductGroupList</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="32" package="">
+        <name>getProductGroupIdListForProduct</name>
+        <type>function</type>
+        <argument line="32">
+          <name>$product_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="44" package="">
+        <name>getProductGroup</name>
+        <type>function</type>
+        <argument line="44">
+          <name>$product_group_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/dao/CustomerDAO.php" hash="61a6b0b25da31082b723a5aeee421eb5" package="Default">
+    <parse_markers>
+      <error line="15" code="50018">No DocBlock was found for property $connection</error>
+      <error line="17" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="21" code="50010">No DocBlock was found for method getCustomer()</error>
+      <error line="31" code="50010">No DocBlock was found for method registerCustomer()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/dao/CustomerDAO.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>CustomerDAO</name>
+      <full_name>\CustomerDAO</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of CustomerDAO]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="15" package="Default">
+        <name>$connection</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="17" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <argument line="17">
+          <name>$connection</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="21" package="">
+        <name>getCustomer</name>
+        <type>function</type>
+        <argument line="21">
+          <name>$user_name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="31" package="">
+        <name>registerCustomer</name>
+        <type>function</type>
+        <argument line="31">
+          <name>$customer_info</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/dao/Customer_orderDAO.php" hash="8cae045d3b61c16ead950731da367393" package="Default">
+    <parse_markers>
+      <error line="15" code="50018">No DocBlock was found for property $connection</error>
+      <error line="17" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="21" code="50010">No DocBlock was found for method getOrderListByCustomer()</error>
+      <error line="34" code="50010">No DocBlock was found for method getOrderInfo()</error>
+      <error line="50" code="50010">No DocBlock was found for method makeOrder()</error>
+      <error line="64" code="50010">No DocBlock was found for method putProductsInOrder()</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/dao/Customer_orderDAO.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="13" package="Default">
+      <name>Customer_orderDAO</name>
+      <full_name>\Customer_orderDAO</full_name>
+      <extends/>
+      <docblock line="8">
+        <description><![CDATA[Description of Customer_orderDAO]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="8" name="author" description="markus"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="15" package="Default">
+        <name>$connection</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="17" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <argument line="17">
+          <name>$connection</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="21" package="">
+        <name>getOrderListByCustomer</name>
+        <type>function</type>
+        <argument line="21">
+          <name>$customer_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="34" package="">
+        <name>getOrderInfo</name>
+        <type>function</type>
+        <argument line="34">
+          <name>$order_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="50" package="">
+        <name>makeOrder</name>
+        <type>function</type>
+        <argument line="50">
+          <name>$customer_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="50">
+          <name>$shoppings</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="64" package="">
+        <name>putProductsInOrder</name>
+        <type>function</type>
+        <argument line="64">
+          <name>$order_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="64">
+          <name>$shoppings</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/config.inc.php" hash="b0df58dfd9379e9328ff6d3213e4d68c" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/config.inc.php</error>
+    </parse_markers>
+    <constant namespace="default" line="3" package="Default">
+      <name>DATABASE</name>
+      <value><![CDATA["pgsql:host=localhost;dbname=markusno"]]></value>
+    </constant>
+    <constant namespace="default" line="4" package="Default">
+      <name>DBUSER</name>
+      <value><![CDATA["markusno"]]></value>
+    </constant>
+    <constant namespace="default" line="5" package="Default">
+      <name>DBPASS</name>
+      <value><![CDATA["bb6a769a27189f9b"]]></value>
+    </constant>
+    <constant namespace="default" line="7" package="Default">
+      <name>USERNAME_MIN_LENGTH</name>
+      <value><![CDATA[4]]></value>
+    </constant>
+    <constant namespace="default" line="8" package="Default">
+      <name>USERNAME_MAX_LENGTH</name>
+      <value><![CDATA[16]]></value>
+    </constant>
+    <constant namespace="default" line="9" package="Default">
+      <name>PASSWORD_MIN_LENGTH</name>
+      <value><![CDATA[6]]></value>
+    </constant>
+    <constant namespace="default" line="10" package="Default">
+      <name>PASSWORD_MAX_LENGTH</name>
+      <value><![CDATA[16]]></value>
+    </constant>
+    <constant namespace="default" line="13" package="Default">
+      <name>ADMINMAIL</name>
+      <value><![CDATA["markus.nousiainen@cs.helsinki.fi"]]></value>
+    </constant>
+    <constant namespace="default" line="16" package="Default">
+      <name>USER_NAME_INVALID</name>
+      <value><![CDATA["Virheellinen käyttäjänimi!"]]></value>
+    </constant>
+    <constant namespace="default" line="17" package="Default">
+      <name>PASSWORD_INVALID</name>
+      <value><![CDATA["Virheellinen salasana!"]]></value>
+    </constant>
+    <constant namespace="default" line="18" package="Default">
+      <name>EMPTY_FIELDS</name>
+      <value><![CDATA["Kaikki kentät pakollisia!"]]></value>
+    </constant>
+    <constant namespace="default" line="19" package="Default">
+      <name>ACCOUNT_NOT_FOUND</name>
+      <value><![CDATA["Käyttäjätiliä ei löydy! Tarkasta käyttäjänimi ja salasana!"]]></value>
+    </constant>
+    <constant namespace="default" line="20" package="Default">
+      <name>PASSWORD_CONFIRMATION_FAIL</name>
+      <value><![CDATA["Tarkista salasana!"]]></value>
+    </constant>
+    <constant namespace="default" line="21" package="Default">
+      <name>USER_NAME_NOT_FREE</name>
+      <value><![CDATA["Käyttäjänimi varattu!"]]></value>
+    </constant>
+    <constant namespace="default" line="22" package="Default">
+      <name>ACCOUNT_CREATION_PROBLEM</name>
+      <value><![CDATA["Ongelmia käyttäjätilin luonnissa!"]]></value>
+    </constant>
+    <constant namespace="default" line="23" package="Default">
+      <name>EMAIL_INVALID</name>
+      <value><![CDATA["Virheellinen sähköpostiosoite"]]></value>
+    </constant>
+    <constant namespace="default" line="24" package="Default">
+      <name>PRODUCT_ADDED</name>
+      <value><![CDATA["Tuote lisätty ostoskoriin"]]></value>
+    </constant>
+    <constant namespace="default" line="25" package="Default">
+      <name>SHOPPING_CART_EMPTY</name>
+      <value><![CDATA["Ostoskorissasi ei ole yhtään tuotetta!"]]></value>
+    </constant>
+    <constant namespace="default" line="26" package="Default">
+      <name>NOT_LOGGED</name>
+      <value><![CDATA["Kirjaudu sisään tai rekisteröidy tilataksesi!"]]></value>
+    </constant>
+    <constant namespace="default" line="27" package="Default">
+      <name>ORDER_NOT_SAVED</name>
+      <value><![CDATA["Ongelmia tilauksen tallennuksessa!"]]></value>
+    </constant>
+    <constant namespace="default" line="28" package="Default">
+      <name>NO_ORDERS</name>
+      <value><![CDATA["Asikastiedoissasi ei ole yhtään tilauksia"]]></value>
+    </constant>
+    <constant namespace="default" line="29" package="Default">
+      <name>ORDER_NOT_PAID</name>
+      <value><![CDATA["Odottaa maksua"]]></value>
+    </constant>
+    <constant namespace="default" line="30" package="Default">
+      <name>ORDER_PAID</name>
+      <value><![CDATA["Maksu suoritettu"]]></value>
+    </constant>
+    <constant namespace="default" line="31" package="Default">
+      <name>DATE_NOT_DEFINED</name>
+      <value><![CDATA["Ei vielä tiedossa"]]></value>
+    </constant>
+    <constant namespace="default" line="32" package="Default">
+      <name>NO_ORDER_SELECTED</name>
+      <value><![CDATA["Ei tilausta valittuna."]]></value>
+    </constant>
+  </file>
+  <file path="WebShop/lib/logic/Email_logic.php" hash="744291a2230e72c5e95ebaec874765e7" package="Default">
+    <parse_markers>
+      <error line="5" code="50010">No DocBlock was found for method send_registeration_mail()</error>
+      <error line="19" code="50010">No DocBlock was found for method send_order_confirmation()</error>
+      <error line="3" code="50000">No DocBlock was found for Email_logic</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/logic/Email_logic.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="3" package="Default">
+      <name>Email_logic</name>
+      <full_name>\Email_logic</full_name>
+      <extends/>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="5" package="">
+        <name>send_registeration_mail</name>
+        <type>function</type>
+        <argument line="5">
+          <name>$customer</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="19" package="">
+        <name>send_order_confirmation</name>
+        <type>function</type>
+        <argument line="19">
+          <name>$customer</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="19">
+          <name>$order_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="19">
+          <name>$orderInfo</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="WebShop/lib/base.inc.php" hash="d64f65a585abfc49cf637969dd3e70bc" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file WebShop/lib/base.inc.php</error>
+    </parse_markers>
+    <include line="3" type="Require Once" package="Default">
+      <name>lib/config.inc.php</name>
+    </include>
+    <include line="6" type="Require Once" package="Default">
+      <name>lib/common/DBConnection.php</name>
+    </include>
+    <include line="7" type="Require Once" package="Default">
+      <name>lib/common/Evaluation.php</name>
+    </include>
+    <include line="8" type="Require Once" package="Default">
+      <name>lib/common/Trimmer.php</name>
+    </include>
+    <include line="10" type="Require Once" package="Default">
+      <name>lib/model/Customer.php</name>
+    </include>
+    <include line="11" type="Require Once" package="Default">
+      <name>lib/model/Customer_order.php</name>
+    </include>
+    <include line="12" type="Require Once" package="Default">
+      <name>lib/model/Product.php</name>
+    </include>
+    <include line="13" type="Require Once" package="Default">
+      <name>lib/model/Product_group.php</name>
+    </include>
+    <include line="14" type="Require Once" package="Default">
+      <name>lib/model/Shopping_cart.php</name>
+    </include>
+    <include line="16" type="Require Once" package="Default">
+      <name>lib/dao/User_accountDAO.php</name>
+    </include>
+    <include line="17" type="Require Once" package="Default">
+      <name>lib/dao/CustomerDAO.php</name>
+    </include>
+    <include line="18" type="Require Once" package="Default">
+      <name>lib/dao/Customer_orderDAO.php</name>
+    </include>
+    <include line="19" type="Require Once" package="Default">
+      <name>lib/dao/ProductDAO.php</name>
+    </include>
+    <include line="20" type="Require Once" package="Default">
+      <name>lib/dao/Product_groupDAO.php</name>
+    </include>
+    <include line="22" type="Require Once" package="Default">
+      <name>lib/logic/Email_logic.php</name>
+    </include>
+  </file>
+  <package name="" full_name=""/>
+  <package name="Default" full_name="Default"/>
+  <namespace name="default" full_name="default"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>

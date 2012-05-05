@@ -18,6 +18,9 @@ $control = new PageController();
         ?>
         <div class="content_container">
             <div class="content">
+                <p class="error_message">
+                    <?php echo $control->getMessages(); ?>
+                </p>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
                       method ="post">
                     <table border="1">

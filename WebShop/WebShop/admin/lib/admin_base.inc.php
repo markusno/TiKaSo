@@ -1,5 +1,7 @@
 <?php
-
+/**
+ *File in wich all commonly used files are required. 
+ */
 require_once 'lib/admin_config.inc.php';
 
 //Database and evaluation
@@ -12,7 +14,6 @@ require_once '../lib/model/Customer.php';
 require_once '../lib/model/Customer_order.php';
 require_once '../lib/model/Product.php';
 require_once '../lib/model/Product_group.php';
-require_once '../lib/model/Product_in_cart.php';
 require_once '../lib/model/Shopping_cart.php';
 //Data access
 require_once '../lib/dao/Shop_adminDAO.php';

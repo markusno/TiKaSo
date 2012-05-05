@@ -6,7 +6,7 @@
  */
 
 /**
- * Description of ctrl_admin_base_form
+ * Common operations for all forms in admin pages.
  *
  * @author markus
  */
@@ -19,7 +19,10 @@ class AdminBaseFormController {
         $this->messages = array();
     }
     
-    
+    /**
+     *Getter for error messages.
+     * @return error messages as string. 
+     */
     public function getMessages() {
         if (empty($this->messages)) {
             return "";

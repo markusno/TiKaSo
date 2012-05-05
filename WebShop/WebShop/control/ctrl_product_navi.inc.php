@@ -1,5 +1,7 @@
 <?php
-
+/**
+ *Controller for product navigation block. 
+ */
 class ProductNaviController {
     
     private $product_groups;
@@ -17,6 +19,10 @@ class ProductNaviController {
         $this->product_groups = $this->group_dao->getProductGroupList();
     }
     
+    /**
+     *Returns html links to product group pages.
+     * @return html links 
+     */
     public function getNavigation() {
         $navigation = "";
         foreach ($this->product_groups as $group){

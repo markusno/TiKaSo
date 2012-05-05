@@ -1,12 +1,7 @@
 <?php
 require_once 'control/ctrl_admin_base_form.inc.php';
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of ctrl_admin_product
+ * Page controller for product editing/creating page.
  *
  * @author markus
  */
@@ -17,7 +12,10 @@ class ProductFormController extends AdminBaseFormController {
     private $product_dao;
     private $product_group;
     private $product;
-
+    
+    /**
+     *Handles the information from product form given in post table.
+     */
     public function __construct() {
         parent::__construct();
         $dbObject = new DBConnection();
@@ -128,6 +126,10 @@ class ProductFormController extends AdminBaseFormController {
         $this->product_group = $this->product_group_dao->getProductGroup($id);
     }
 
+    /**
+     *Builds options for product group chooser dropdown menu in productform.
+     * @return html
+     */
     public function getProductGroupOptions() {
         $productGroups = $this->product_group_dao->getProductGroupList();
         $groupOptions = "";
@@ -144,7 +146,11 @@ class ProductFormController extends AdminBaseFormController {
         }
         return $groupOptions;
     }
-
+    
+    /**
+     *Builds options for product chooser dropdown menu in productform.
+     * @return html
+     */
     public function getProductOptions() {
         if (isset($this->product_group)) {
             $products = $this->product_dao->getProductsInGroup($this->product_group->getID());
@@ -166,6 +172,10 @@ class ProductFormController extends AdminBaseFormController {
         return $productOptions;
     }
     
+    /**
+     * If product is chosen returns its' id number otherwise empty string.
+     * @return product id as string 
+     */
     public function getProductID() {
         if (isset($this->product)) {
             return $this->product->getID();
@@ -173,6 +183,10 @@ class ProductFormController extends AdminBaseFormController {
         return "";
     }
     
+    /**
+     * If product is chosen returns its' name othervise "new product".
+     * @return product name as string 
+     */  
     public function getProductName() {
         if (isset($this->product)) {
             return $this->product->getName();
@@ -180,6 +194,10 @@ class ProductFormController extends AdminBaseFormController {
         return "new product";
     }
 
+    /**
+     * If product is chosen returns its' description othervise empty string.
+     * @return product description as string 
+     */
     public function getProductDescription() {
         if (isset($this->product)) {
             return $this->product->getDescription();
@@ -187,6 +205,10 @@ class ProductFormController extends AdminBaseFormController {
         return "";
     }
 
+    /**
+     * If product is chosen returns its' price othervise empty string.
+     * @return unit price as string 
+     */
     public function getProductPrice() {
         if (isset($this->product)) {
             return $this->product->getPrice();
@@ -194,6 +216,12 @@ class ProductFormController extends AdminBaseFormController {
         return "";
     }
 
+    /**
+     *If product is chosen and its' visibility value is false returns empty string.
+     * Othervise returns string "checked="checked""
+     * This getter is used for check box in html form.
+     * @return string 
+     */
     public function getProductVisibleChecked() {
         if (isset($this->product)) {
             if (!$this->product->getVisibility()) {
@@ -203,6 +231,12 @@ class ProductFormController extends AdminBaseFormController {
         return "checked=\"checked\"";
     }
 
+    /**
+     *If product is chosen and its' visibility value is false returns string "checked="checked"".
+     * Othervise returns empty string.
+     * This getter is used for check box in html form.
+     * @return string 
+     */
     public function getProductHiddenChecked() {
         if (isset($this->product)) {
             if (!$this->product->getVisibility()) {
@@ -211,7 +245,12 @@ class ProductFormController extends AdminBaseFormController {
         }
         return "";
     }
-
+    
+    
+    /**
+     *Builds check boxes for html form to choose in which product groups product belongs.
+     * @return html
+     */
     public function getProductGroupCheckBoxes() {
         $productGroups = $this->product_group_dao->getProductGroupList();
         $groupIdsForProduct = Array();

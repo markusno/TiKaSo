@@ -1,11 +1,17 @@
 <?php
-
+/**
+ *Page controller for product page.
+ *  
+ */
 require_once 'control/ctrl_base_controller.inc.php';
 
 class PageController extends BasePageController {
 
     private $product;
     
+    /**
+     * Uses information from get table to get information from apropriate product.
+     */
     public function __construct() {
         parent::__construct();
         $dbObject = new DBConnection();
@@ -37,18 +43,34 @@ class PageController extends BasePageController {
         $this->messages[] = PRODUCT_ADDED; 
     }
     
+    /**
+     *Returns name of current product.
+     * @return name as string. 
+     */
     public function getProductName(){
         return $this->product->getName();
     }
     
+    /**
+     *Returns id of current product.
+     * @return id as string. 
+     */
     public function getProductID(){
         return $this->product->getID();
     }
     
+    /**
+     *Returns description of current product.
+     * @return descrition as string. 
+     */
     public function getProductDescription(){
         return $this->product->getDescription();
     }
     
+    /**
+     *Returns unit price of current product.
+     * @return unit price as string. 
+     */
     public function getProductPrice(){
         return $this->product->getPrice();
     }

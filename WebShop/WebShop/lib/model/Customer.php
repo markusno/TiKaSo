@@ -68,6 +68,26 @@ class Customer {
         $this->phone_number = (string)$customer_info["phone_number"];
         $this->user_name = $customer_info["user_name"];
     }
+    
+    public function toHTMLString(){
+        return
+        "ID: ". $this->customer_id ."<br/> " .
+        $this->last_name .", " . $this->first_name ."<br/> " .
+        $this->street_address ."<br/> " .
+        $this->postal_code  .", " . $this->city ."<br/> " .
+        $this->email ."<br/> " .
+        $this->phone_number;
+    }
+    
+    public function toString(){
+        return
+        "ID: ". $this->customer_id ."\n" .
+        $this->last_name .", " . $this->first_name ."\n" .
+        $this->street_address ."\n" .
+        $this->postal_code  .", " . $this->city ."\n" .
+        $this->email ."\n" .
+        $this->phone_number;
+    }
 }
 
 ?>

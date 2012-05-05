@@ -1,4 +1,7 @@
 <?php
+/**
+ *Index and login page controller for admin pages. 
+ */
 require_once 'lib/admin_base.inc.php';
 require_once 'control/ctrl_start_admin_session.inc.php';
 
@@ -6,6 +9,11 @@ class PageController{
     
     private $messages;
     
+    /**
+     *If login is succesfull this constructor saves admin object in session table.
+     *If there's problems with login concurrent errormessage is adde to error message table. 
+     * @return type 
+     */
     public function __construct() {
         if (isset($_SESSION["admin"])){
             header("location: settings.php");
@@ -33,7 +41,7 @@ class PageController{
             $this->messages[] = ACCOUNT_NOT_FOUND;
         }
     }
-
+    
     private function validate($user_name, $password) {
         $eval = new Evaluation();
         $valid = TRUE;
@@ -49,6 +57,10 @@ class PageController{
 
     }
     
+    /**
+     *Getter for error messages.
+     * @return error messages as string. 
+     */
     public function getMessages() {
         if (empty($this->messages)) {
             return "";

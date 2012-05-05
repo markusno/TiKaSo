@@ -17,7 +17,6 @@ class Shopping_cart {
 
     public function __construct() {
         $this->shoppings = array();
-        ;
     }
 
     public function addToCart($product_id, $amount) {

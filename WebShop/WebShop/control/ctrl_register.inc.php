@@ -1,11 +1,18 @@
 <?php
 
+/**
+ *Page controller for customer registeration page. 
+ */
 require_once 'control/ctrl_base_controller.inc.php';
 
 class PageController extends BasePageController{
 
-    //private $messages;
-
+    /**
+     * Handles information in post table from registeration form.
+     * If registeration ok saves customers info into session table and redirects to customer page.
+     * Othervise puts error message into messages table.
+     * 
+     */
     public function __construct() {
         parent::__construct();
         if (empty($_POST)) {
@@ -16,7 +23,7 @@ class PageController extends BasePageController{
             return;
         }
         if ($this->registerCustomer($form_values)) {            
-            header('Location: welcome.php');
+            header('Location: customer.php');
             exit;
         } else {
             $this->messages[] = ACCOUNT_CREATION_PROBLEM;

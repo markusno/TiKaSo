@@ -22,6 +22,14 @@ define("USER_NAME_NOT_FREE", "Käyttäjänimi varattu!");
 define("ACCOUNT_CREATION_PROBLEM", "Ongelmia käyttäjätilin luonnissa!");
 define("EMAIL_INVALID", "Virheellinen sähköpostiosoite");
 define("PRODUCT_ADDED", "Tuote lisätty ostoskoriin");
+define("SHOPPING_CART_EMPTY", "Ostoskorissasi ei ole yhtään tuotetta!");
+define("NOT_LOGGED", "Kirjaudu sisään tai rekisteröidy tilataksesi!");
+define("ORDER_NOT_SAVED", "Ongelmia tilauksen tallennuksessa!");
+define("NO_ORDERS", "Asikastiedoissasi ei ole yhtään tilauksia");
+define("ORDER_NOT_PAID", "Odottaa maksua");
+define("ORDER_PAID", "Maksu suoritettu");
+define("DATE_NOT_DEFINED", "Ei vielä tiedossa");
+define("NO_ORDER_SELECTED", "Ei tilausta valittuna.");
 ?>
 
 

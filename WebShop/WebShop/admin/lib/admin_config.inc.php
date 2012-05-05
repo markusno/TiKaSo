@@ -1,4 +1,8 @@
 <?php
+/**
+ *Configuration file for admin pages settings. 
+ */
+
 //Database settings
 define("DATABASE", "pgsql:host=localhost;dbname=markusno");
 define("DBUSER", "markusno");

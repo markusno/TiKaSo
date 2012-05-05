@@ -1,6 +1,5 @@
 <?php
 require_once 'control/ctrl_index.inc.php';
-//var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html>

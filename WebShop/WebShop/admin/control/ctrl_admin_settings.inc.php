@@ -9,7 +9,8 @@ require_once 'control/ctrl_admin_product.inc.php';
  */
 
 /**
- * Description of ctrl_admin_settings
+ * Page controller for admin settings page.
+ * Chooses content to be shown in settings page according to users navigation.
  *
  * @author markus
  */
@@ -19,6 +20,10 @@ class PageController {
     private $messages;
     private $content;
 
+    /**
+     *Checks if admin is logged in and reidrects to login page if not.
+     * Handles navigation information from post table.
+     */
     public function __construct() {
         if (isset($_POST["logout"])) {
             unset($_SESSION["admin"]);
@@ -40,14 +45,26 @@ class PageController {
         }
     }
     
+    /**
+     * Getter for contents address.
+     * @return address as string.
+     */
     public function getContent(){
         return $this->content;
     }
 
+    /**
+     * Getter for admins name.
+     * @return name as string.
+     */
     public function getAdminName (){
         return $this->admin->getName();
     }
     
+    /**
+     * Getter for admins last login time.
+     * @return login date and time as string.
+     */
     public function getAdminLastLogin (){
         return $this->admin->getLastLogin();
     }
