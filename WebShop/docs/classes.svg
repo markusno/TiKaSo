@@ -74,7 +74,7 @@
 </a>
 </g>
 <!-- \\ProductFormController&#45;&gt;\\AdminBaseFormController -->
-<g id="edge23" class="edge"><title>\\ProductFormController&#45;&gt;\\AdminBaseFormController</title>
+<g id="edge21" class="edge"><title>\\ProductFormController&#45;&gt;\\AdminBaseFormController</title>
 <path fill="none" stroke="black" d="M280.838,-898C254.832,-898 225.632,-898 198.487,-898"/>
 <polygon fill="none" stroke="black" points="198.195,-894.5 188.195,-898 198.195,-901.5 198.195,-894.5"/>
 </g>

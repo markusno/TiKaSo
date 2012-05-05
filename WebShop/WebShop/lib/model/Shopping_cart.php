@@ -1,12 +1,6 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of Shopping_cart
+ * Class to hold information about shoppings.
  *
  * @author markus
  */

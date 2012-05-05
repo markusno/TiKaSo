@@ -1,17 +1,15 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of DBConnection
+ * Class for creating database connection.
  *
  * @author markus
  */
 class DBConnection {
-    //put your code here
+    
+    /**
+     *Returns PDO object.
+     * @return \PDO 
+     */
     public function getConnetion(){
         try {
             $connection = new PDO(DATABASE, DBUSER, DBPASS);

@@ -1,11 +1,6 @@
 <?php
 
 require_once 'control/ctrl_base_controller.inc.php';
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Page controller for checkout page.
  *

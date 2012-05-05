@@ -1,12 +1,7 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of ProductDAO
+ * Class for accessing product information in database
  *
  * @author markus
  */
@@ -16,10 +11,20 @@ class ProductDAO {
 
     private $connection;
 
+    /**
+     *Assigns PDO object given as parameter to be used by functions.
+     * @param PDO $connection 
+     */
     public function __construct(&$connection) {
         $this->connection = &$connection;
     }
 
+    /**Gets information of one product from database.
+     * Returns product object.
+     *
+     * @param numeric $product_ID
+     * @return \Product 
+     */
     public function getProduct($product_ID) {
         $query = $this->connection->prepare("SELECT * 
             FROM Product
@@ -29,7 +34,12 @@ class ProductDAO {
         $product = new Product($product_info);
         return $product;
     }
-
+    
+    /**
+     *Gets information of all products in database.
+     * Returns product objects in array. 
+     * @return array 
+     */
     public function getAllProducts() {
         $query = $this->connection->prepare("SELECT * FROM Product;");
         $query->execute();
@@ -40,6 +50,12 @@ class ProductDAO {
         return $all_products;
     }
 
+    /**
+     **Gets information of all products in one product group in database.
+     * Returns product objects in array.
+     * @param numeric $product_group_ID
+     * @return array
+     */
     public function getProductsInGroup($product_group_ID) {
         $query = $this->connection->prepare("SELECT Product_id 
             FROM Product_in_group 
@@ -52,12 +68,18 @@ class ProductDAO {
         return $products_in_group;
     }
 
-    public function removeProductFromAllGroups($product_id){
+    private function removeProductFromAllGroups($product_id){
         $query = $this->connection->prepare("DELETE FROM Product_in_group
             WHERE product_id = ?;");
         $query->execute(array($product_id));
     }
     
+    /**
+     *Updates information of existing product in database and.
+     * @param type $product_info
+     * @param type $product_group_ids
+     * @return /Product
+     */
     public function saveExistingProduct(&$product_info, &$product_group_ids) {
         $query = $this->connection->prepare("UPDATE Product 
             SET name = ?, description = ?, unit_price = ?
@@ -69,6 +91,12 @@ class ProductDAO {
         return $this->getProduct($product_info["product_id"]);
     }
 
+    /**
+     *Inserts new row into product table in database.
+     * @param array $product_info
+     * @param array $product_group_ids
+     * @return numeric $id 
+     */
     public function saveNewProduct(&$product_info, &$product_group_ids) {
         $query = $this->connection->prepare("INSERT INTO Product
             (name, description, unit_price) VALUES (?, ?, ?);");
@@ -82,7 +110,7 @@ class ProductDAO {
         return $this->getProduct($id);
     }
 
-    public function addProductInGroup($product_id, $product_group_ids) {
+    private function addProductInGroup($product_id, $product_group_ids) {
         $query = $this->connection->prepare("INSERT INTO Product_in_group 
             (product_id, product_group_id) VALUES (?, ?);");
         foreach ($product_group_ids as $group_id) {

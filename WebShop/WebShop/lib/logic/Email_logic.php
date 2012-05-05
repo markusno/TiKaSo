@@ -1,7 +1,13 @@
 <?php
-
+/**
+ *Class for sending emails. 
+ */
 class Email_logic {
 
+    /**
+     *For sending rwegisteration confimation email.
+     * @param type $customer 
+     */
     public function send_registeration_mail(&$customer) {
         $message = "Hei\n" . $customer->getName() .
                 "\nKiitoksia rekisteröitymisestä Verkkokauppa palveluun" .
@@ -16,6 +22,12 @@ class Email_logic {
         mail($customer->getEmail(), "Kiitokosia rekisteröitymisestäsi", $message, $header_);
     }
     
+    /**
+     *For sending order confirmation email.
+     * @param type $customer
+     * @param type $order_id
+     * @param type $orderInfo 
+     */
     public function send_order_confirmation($customer, $order_id, $orderInfo){
         $message = "Hei\n" . $customer->getName() .
                 "\nKiitoksia tilauksesta" .

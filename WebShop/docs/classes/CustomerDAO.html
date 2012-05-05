@@ -28,7 +28,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">272</span></a></li>
+                <span class="label label-info">236</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -52,12 +52,9 @@
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods</li>
-<li class="method public "><a href="#__construct" title="__construct :: "><span class="description">__construct()
-        </span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#getCustomer" title="getCustomer :: "><span class="description">getCustomer()
-        </span><pre>getCustomer()</pre></a></li>
-<li class="method public "><a href="#registerCustomer" title="registerCustomer :: "><span class="description">registerCustomer()
-        </span><pre>registerCustomer()</pre></a></li>
+<li class="method public "><a href="#__construct" title="__construct :: Assigns PDO object given as parameter to be used by functions."><span class="description">Assigns PDO object given as parameter to be used by functions.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#getCustomer" title="getCustomer :: Gets customer information from database by user_name given as parameter and returns customer object created with that information."><span class="description">Gets customer information from database by user_name given as parameter and returns customer object created with that information.</span><pre>getCustomer()</pre></a></li>
+<li class="method public "><a href="#registerCustomer" title="registerCustomer :: Creates new row into customer table in database using information given as parameter and returns customer object created with that information."><span class="description">Creates new row into customer table in database using information given as parameter and returns customer object created with that information.</span><pre>registerCustomer()</pre></a></li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties</li>
 <li class="nav-header private">» Private</li>
@@ -66,7 +63,7 @@
 </div>
 <div class="span8">
 <a name="%5CCustomerDAO" id="\CustomerDAO"></a><div href="../classes/CustomerDAO.html" class="element class">
-<p class="short_description">Description of CustomerDAO</p>
+<p class="short_description">Class for accessing customer information in database</p>
 <div class="details">
 <p class="long_description"></p>
 <table class="table table-bordered"><tr>
@@ -76,45 +73,46 @@
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
-<h2>__construct()
-        </h2>
-<pre>__construct($connection) </pre>
+<h2>Assigns PDO object given as parameter to be used by functions.</h2>
+<pre>__construct(<a href="http://php.net/manual/en/class.pdo.php">\PDO</a> $connection) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="span8">
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$connection</h4>
-<code></code>
+<code><a href="http://php.net/manual/en/class.pdo.php">\PDO</a></code>
 </div>
 </div></div>
 </div>
 <a name="getCustomer" id="getCustomer"></a><div class="element clickable method public getCustomer" data-toggle="collapse" data-target=".getCustomer .collapse">
-<h2>getCustomer()
-        </h2>
-<pre>getCustomer($user_name) </pre>
+<h2>Gets customer information from database by user_name given as parameter and returns customer object created with that information.</h2>
+<pre>getCustomer(string $user_name) : <a href="../classes/Customer.html">\Customer</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="span8">
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$user_name</h4>
-<code></code>
+<code>string</code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Customer.html">\Customer</a></code></div>
 </div></div>
 </div>
 <a name="registerCustomer" id="registerCustomer"></a><div class="element clickable method public registerCustomer" data-toggle="collapse" data-target=".registerCustomer .collapse">
-<h2>registerCustomer()
-        </h2>
-<pre>registerCustomer($customer_info) </pre>
+<h2>Creates new row into customer table in database using information given as parameter and returns customer object created with that information.</h2>
+<pre>registerCustomer(array $customer_info) : \/Customer</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="span8">
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$customer_info</h4>
-<code></code>
+<code>array</code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\/Customer</code></div>
 </div></div>
 </div>
 <h3>
@@ -132,7 +130,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a2</a> and<br>
-            generated on 2012-05-05T21:12:57+03:00.<br></footer></div>
+            generated on 2012-05-05T22:53:40+03:00.<br></footer></div>
 </div>
 </body>
 </html>
